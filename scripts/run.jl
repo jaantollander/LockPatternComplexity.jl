@@ -1,4 +1,4 @@
-include("../src/functions.jl")
+using LockPatternComplexity
 
 n = 4  # 2, 4, 6
 N, xs, ys, ds = line_types(n)
@@ -7,7 +7,7 @@ cmd = `$minizinc src/nxn_gen.mzn
        -D "n=$n;N=$N;xs=$(string(xs));ys=$(string(ys));ds=$(string(ds));"
        --solver chuffed
        --statistics 
+       --all-solutions
        --two-pass`
-       # --all-solutions
 
 run(cmd)

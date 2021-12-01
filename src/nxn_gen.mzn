@@ -41,11 +41,13 @@ int: N;
 array[1..N] of int: xs;
 array[1..N] of int: ys;
 array[1..N] of int: ds;
-% TODO: prove: min(N, m-1) = m-1
 constraint count(i in 1..N)(line(xs[i], ys[i], ds[i])) = min(N, m-1);
 
-% Maximize distance
+% Find max complexity patterns
 solve satisfy;
-
-% Print output
 output ["pattern=\(p)", "\n", "distance=\(sum(i in 1..m-1)(abs(dx[i]) + abs(dy[i])))"];
+
+% Maximize distance
+% var int: distance = sum(i in 1..m-1)(abs(dx[i]) + abs(dy[i]));
+% solve maximize distance;
+% output ["pattern=\(p)", "\n", "distance=\(distance)"];

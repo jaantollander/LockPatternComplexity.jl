@@ -6,8 +6,8 @@ distance: 22 | distance: 116
 
 4×4 | 6×6
 :-:|:-:
-![](results/4x4/57/10156495539748464886.svg) | ![](results/6x6/188/1547877444729350065.svg)
-distance: 57 | distance: 188
+![](results/4x4/60/7406136358885409782.svg) | ![](results/6x6/188/1547877444729350065.svg)
+distance: 60 | distance: 188
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/stable)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/dev)

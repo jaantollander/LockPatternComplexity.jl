@@ -1,5 +1,4 @@
 using Plots
-include("functions.jl")
 
 function plot_nxn(n::Int, p::Vector{Int})
     x, y = grid(n)

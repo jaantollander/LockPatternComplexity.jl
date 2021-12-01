@@ -1,0 +1,254 @@
+% Generated FlatZinc statistics:
+%%%mzn-stat: paths=1805
+%%%mzn-stat: flatBoolVars=1244
+%%%mzn-stat: flatIntVars=125
+%%%mzn-stat: flatBoolConstraints=902
+%%%mzn-stat: flatIntConstraints=462
+%%%mzn-stat: evaluatedReifiedConstraints=348
+%%%mzn-stat: method="maximize"
+%%%mzn-stat: flatTime=0.340939
+%%%mzn-stat-end
+
+pattern=[2, 15, 1, 12, 14, 3, 13, 4, 11, 5, 10, 6, 7, 16, 9, 8]
+distance=53
+----------
+pattern=[9, 4, 13, 12, 5, 16, 2, 8, 10, 3, 14, 1, 11, 7, 6, 15]
+distance=55
+----------
+pattern=[2, 15, 6, 8, 10, 4, 9, 16, 1, 12, 13, 3, 14, 7, 11, 5]
+distance=56
+----------
+% Pruned 49983 learnt clauses
+pattern=[7, 14, 1, 12, 9, 3, 13, 8, 10, 2, 16, 6, 15, 4, 5, 11]
+distance=57
+----------
+pattern=[8, 13, 4, 14, 3, 10, 6, 15, 2, 16, 5, 12, 9, 7, 1, 11]
+distance=58
+----------
+% Pruned 49988 learnt clauses
+% Pruned 49964 learnt clauses
+% Pruned 49981 learnt clauses
+% Pruned 49971 learnt clauses
+% Pruned 49966 learnt clauses
+% Pruned 49950 learnt clauses
+% Pruned 49993 learnt clauses
+% Pruned 49972 learnt clauses
+% Pruned 49957 learnt clauses
+% Pruned 49993 learnt clauses
+% Pruned 49971 learnt clauses
+% Pruned 49982 learnt clauses
+% Pruned 49965 learnt clauses
+% Pruned 49950 learnt clauses
+% Pruned 49954 learnt clauses
+% Pruned 49954 learnt clauses
+% Pruned 49991 learnt clauses
+% Pruned 49977 learnt clauses
+% Pruned 49982 learnt clauses
+% Pruned 49977 learnt clauses
+% Pruned 49964 learnt clauses
+% Pruned 49952 learnt clauses
+% Pruned 49990 learnt clauses
+% Pruned 49985 learnt clauses
+% Pruned 49965 learnt clauses
+% Pruned 49982 learnt clauses
+% Pruned 49974 learnt clauses
+% Pruned 49982 learnt clauses
+% Pruned 49962 learnt clauses
+pattern=[5, 11, 7, 14, 3, 13, 4, 9, 8, 10, 12, 1, 16, 2, 15, 6]
+distance=59
+----------
+% Pruned 49988 learnt clauses
+% Pruned 49982 learnt clauses
+% Pruned 49971 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49994 learnt clauses
+pattern=[7, 14, 3, 13, 8, 9, 11, 5, 12, 1, 16, 2, 15, 6, 4, 10]
+distance=60
+----------
+% Pruned 49987 learnt clauses
+% Pruned 49991 learnt clauses
+% Pruned 49975 learnt clauses
+% Pruned 49954 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49973 learnt clauses
+% Pruned 49962 learnt clauses
+% Pruned 49948 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49990 learnt clauses
+% Pruned 49955 learnt clauses
+% Pruned 49948 learnt clauses
+% Pruned 49993 learnt clauses
+% Pruned 49975 learnt clauses
+% Pruned 49987 learnt clauses
+% Pruned 49977 learnt clauses
+% Pruned 49982 learnt clauses
+% Pruned 49987 learnt clauses
+% Pruned 49964 learnt clauses
+% Pruned 49979 learnt clauses
+% Pruned 49985 learnt clauses
+% Pruned 49967 learnt clauses
+% Pruned 49962 learnt clauses
+% Pruned 49979 learnt clauses
+% Pruned 49974 learnt clauses
+% Pruned 49973 learnt clauses
+% Pruned 49986 learnt clauses
+% Pruned 49960 learnt clauses
+% Pruned 49943 learnt clauses
+% Pruned 49987 learnt clauses
+% Pruned 49944 learnt clauses
+% Pruned 49984 learnt clauses
+% Pruned 49958 learnt clauses
+% Pruned 49976 learnt clauses
+% Pruned 49934 learnt clauses
+% Pruned 49977 learnt clauses
+% Pruned 49953 learnt clauses
+% Pruned 49970 learnt clauses
+% Pruned 49965 learnt clauses
+% Pruned 49961 learnt clauses
+% Pruned 49958 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49975 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49991 learnt clauses
+% Pruned 49989 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49959 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49988 learnt clauses
+% Pruned 49982 learnt clauses
+% Pruned 49984 learnt clauses
+% Pruned 49983 learnt clauses
+% Pruned 49983 learnt clauses
+% Pruned 49984 learnt clauses
+% Pruned 49982 learnt clauses
+% Pruned 49977 learnt clauses
+% Pruned 49978 learnt clauses
+% Pruned 49974 learnt clauses
+% Pruned 49990 learnt clauses
+% Pruned 49987 learnt clauses
+% Pruned 49977 learnt clauses
+% Pruned 49974 learnt clauses
+% Pruned 49988 learnt clauses
+% Pruned 49961 learnt clauses
+% Pruned 49960 learnt clauses
+% Pruned 49981 learnt clauses
+% Pruned 49979 learnt clauses
+% Pruned 49972 learnt clauses
+% Pruned 49980 learnt clauses
+% Pruned 49960 learnt clauses
+% Pruned 49962 learnt clauses
+% Pruned 49977 learnt clauses
+% Pruned 49926 learnt clauses
+% Pruned 49974 learnt clauses
+% Pruned 49944 learnt clauses
+% Pruned 49962 learnt clauses
+% Pruned 49966 learnt clauses
+% Pruned 49962 learnt clauses
+% Pruned 49950 learnt clauses
+% Pruned 49948 learnt clauses
+% Pruned 49947 learnt clauses
+% Pruned 49946 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49974 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49993 learnt clauses
+% Pruned 49974 learnt clauses
+% Pruned 49974 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49968 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49988 learnt clauses
+% Pruned 49990 learnt clauses
+% Pruned 49986 learnt clauses
+% Pruned 49946 learnt clauses
+% Pruned 49984 learnt clauses
+% Pruned 49942 learnt clauses
+% Pruned 49981 learnt clauses
+% Pruned 49981 learnt clauses
+% Pruned 49954 learnt clauses
+% Pruned 49977 learnt clauses
+% Pruned 49969 learnt clauses
+% Pruned 49963 learnt clauses
+% Pruned 49957 learnt clauses
+% Pruned 49963 learnt clauses
+% Pruned 49951 learnt clauses
+% Pruned 49967 learnt clauses
+% Pruned 49974 learnt clauses
+% Pruned 49970 learnt clauses
+% Pruned 49962 learnt clauses
+% Pruned 49990 learnt clauses
+% Pruned 49983 learnt clauses
+% Pruned 49964 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49968 learnt clauses
+% Pruned 49957 learnt clauses
+% Pruned 49987 learnt clauses
+% Pruned 49982 learnt clauses
+% Pruned 49956 learnt clauses
+% Pruned 49945 learnt clauses
+% Pruned 49986 learnt clauses
+% Pruned 49956 learnt clauses
+% Pruned 49985 learnt clauses
+% Pruned 49978 learnt clauses
+% Pruned 49953 learnt clauses
+% Pruned 49982 learnt clauses
+% Pruned 49979 learnt clauses
+% Pruned 49968 learnt clauses
+% Pruned 49939 learnt clauses
+% Pruned 49972 learnt clauses
+% Pruned 49969 learnt clauses
+% Pruned 49953 learnt clauses
+% Pruned 49970 learnt clauses
+% Pruned 49961 learnt clauses
+% Pruned 49940 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49981 learnt clauses
+% Pruned 49963 learnt clauses
+% Pruned 49991 learnt clauses
+% Pruned 49969 learnt clauses
+% Pruned 49960 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49991 learnt clauses
+% Pruned 49957 learnt clauses
+% Pruned 49991 learnt clauses
+% Pruned 49989 learnt clauses
+% Pruned 49986 learnt clauses
+% Pruned 49968 learnt clauses
+% Pruned 49987 learnt clauses
+% Pruned 49949 learnt clauses
+% Pruned 49986 learnt clauses
+% Pruned 49979 learnt clauses
+% Pruned 49967 learnt clauses
+% Pruned 49973 learnt clauses
+% Pruned 49946 learnt clauses
+% Pruned 49934 learnt clauses
+% Pruned 49969 learnt clauses
+% Pruned 49955 learnt clauses
+% Pruned 49963 learnt clauses
+% Pruned 49963 learnt clauses
+% Pruned 49939 learnt clauses
+% Pruned 49961 learnt clauses
+% Pruned 49956 learnt clauses
+%%%mzn-stat: nodes=14739532
+%%%mzn-stat: failures=10188204
+%%%mzn-stat: restarts=7
+%%%mzn-stat: variables=3176
+%%%mzn-stat: intVars=125
+%%%mzn-stat: boolVariables=3049
+%%%mzn-stat: propagators=1005
+%%%mzn-stat: propagations=3195757630
+%%%mzn-stat: peakDepth=121
+%%%mzn-stat: nogoods=10188204
+%%%mzn-stat: backjumps=4551062
+%%%mzn-stat: peakMem=0.00
+%%%mzn-stat: time=2836.208
+%%%mzn-stat: initTime=0.010
+%%%mzn-stat: solveTime=2836.198
+%%%mzn-stat: objective=60
+%%%mzn-stat: optTime=525.125
+%%%mzn-stat: baseMem=0.00
+%%%mzn-stat: trailMem=0.02
+%%%mzn-stat: randomSeed=1638361287
