@@ -4,14 +4,14 @@
 ![](results/3x3/22/8827232152991697021.svg) | ![](results/5x5/116/10911156195890606180.svg)
 distance: 22 | distance: 116
 
-[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/stable)
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/dev)
-[![Build Status](https://github.com/jaantollander/LockPatternComplexity.jl/workflows/CI/badge.svg)](https://github.com/jaantollander/LockPatternComplexity.jl/actions)
-
 4×4 | 6×6
 :-:|:-:
 ![](results/4x4/57/10156495539748464886.svg) | ![](results/6x6/188/1547877444729350065.svg)
 distance: 57 | distance: 188
+
+[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/stable)
+[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/dev)
+[![Build Status](https://github.com/jaantollander/LockPatternComplexity.jl/workflows/CI/badge.svg)](https://github.com/jaantollander/LockPatternComplexity.jl/actions)
 
 Solving the most complex lock patterns using Constraint Programming with [MiniZinc](https://www.minizinc.org/).
 
@@ -31,7 +31,7 @@ We use similar definition of lock pattern complexity as in the *Dr. Zye*'s video
 
 For small instances, it is possible to find the maximum the taxicab distance. For larger instances, simply finding satisfying solutions can be quite difficult.
 
-I'm writing more in-depth theory to the [**documentation**](https://jaantollander.github.io/lock-pattern-complexity/dev/).
+I'm writing more in-depth theory to the [**documentation**](https://jaantollander.github.io/LockPatternComplexity.jl/dev/).
 
 
 ## Open Questions
