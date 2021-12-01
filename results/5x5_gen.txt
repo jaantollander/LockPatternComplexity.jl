@@ -1,0 +1,34 @@
+% Generated FlatZinc statistics:
+%%%mzn-stat: paths=3991
+%%%mzn-stat: flatBoolVars=2802
+%%%mzn-stat: flatIntVars=99
+%%%mzn-stat: flatBoolConstraints=2190
+%%%mzn-stat: flatIntConstraints=697
+%%%mzn-stat: evaluatedReifiedConstraints=618
+%%%mzn-stat: method="satisfy"
+%%%mzn-stat: flatTime=0.554567
+%%%mzn-stat-end
+
+pattern=[14, 21, 8, 4, 23, 12, 25, 2, 19, 7, 15, 6, 13, 18, 9, 11, 10, 16, 5, 22, 24, 3, 17, 1, 20]
+distance=108
+----------
+%%%mzn-stat: nodes=67715
+%%%mzn-stat: failures=39562
+%%%mzn-stat: restarts=0
+%%%mzn-stat: variables=4854
+%%%mzn-stat: intVars=99
+%%%mzn-stat: boolVariables=4753
+%%%mzn-stat: propagators=1675
+%%%mzn-stat: propagations=5424139
+%%%mzn-stat: peakDepth=166
+%%%mzn-stat: nogoods=39562
+%%%mzn-stat: backjumps=28053
+%%%mzn-stat: peakMem=0.00
+%%%mzn-stat: time=3.462
+%%%mzn-stat: initTime=0.020
+%%%mzn-stat: solveTime=3.442
+%%%mzn-stat: baseMem=0.00
+%%%mzn-stat: trailMem=0.02
+%%%mzn-stat: randomSeed=1638283163
+%%%mzn-stat: nSolutions=1
+%%%mzn-stat-end

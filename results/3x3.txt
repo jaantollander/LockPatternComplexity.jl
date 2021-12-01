@@ -1,0 +1,388 @@
+% Generated FlatZinc statistics:
+%%%mzn-stat: paths=0
+%%%mzn-stat: flatBoolVars=272
+%%%mzn-stat: flatIntVars=27
+%%%mzn-stat: flatBoolConstraints=200
+%%%mzn-stat: flatIntConstraints=105
+%%%mzn-stat: evaluatedHalfReifiedConstraints=80
+%%%mzn-stat: method="satisfy"
+%%%mzn-stat: flatTime=0.0739996
+%%%mzn-stat-end
+
+pattern=[1, 8, 3, 7, 6, 4, 9, 5, 2]
+distance=21
+----------
+pattern=[1, 8, 3, 9, 4, 5, 7, 6, 2]
+distance=19
+----------
+pattern=[1, 8, 4, 9, 3, 5, 6, 7, 2]
+distance=19
+----------
+pattern=[1, 5, 8, 3, 7, 6, 4, 9, 2]
+distance=21
+----------
+pattern=[1, 6, 7, 5, 4, 8, 3, 9, 2]
+distance=19
+----------
+pattern=[1, 7, 6, 5, 3, 8, 4, 9, 2]
+distance=19
+----------
+pattern=[2, 7, 5, 1, 8, 9, 4, 3, 6]
+distance=18
+----------
+pattern=[2, 7, 8, 1, 5, 3, 4, 9, 6]
+distance=18
+----------
+pattern=[2, 3, 8, 1, 4, 9, 5, 7, 6]
+distance=18
+----------
+pattern=[4, 3, 8, 1, 6, 2, 5, 7, 9]
+distance=19
+----------
+pattern=[3, 4, 9, 1, 8, 6, 5, 2, 7]
+distance=20
+----------
+pattern=[2, 6, 7, 1, 8, 3, 5, 4, 9]
+distance=19
+----------
+pattern=[4, 7, 6, 1, 2, 9, 5, 3, 8]
+distance=18
+----------
+pattern=[2, 7, 8, 1, 6, 9, 5, 3, 4]
+distance=18
+----------
+pattern=[2, 7, 6, 1, 8, 4, 5, 3, 9]
+distance=19
+----------
+pattern=[2, 3, 8, 1, 5, 7, 6, 9, 4]
+distance=18
+----------
+pattern=[2, 9, 4, 1, 5, 6, 7, 3, 8]
+distance=20
+----------
+pattern=[3, 4, 6, 1, 8, 2, 7, 5, 9]
+distance=20
+----------
+pattern=[3, 4, 6, 1, 9, 2, 7, 5, 8]
+distance=21
+----------
+pattern=[5, 3, 8, 1, 2, 6, 7, 4, 9]
+distance=18
+----------
+pattern=[3, 4, 9, 1, 8, 2, 7, 5, 6]
+distance=21
+----------
+pattern=[2, 9, 4, 1, 5, 3, 8, 7, 6]
+distance=18
+----------
+pattern=[2, 9, 6, 1, 5, 7, 8, 3, 4]
+distance=18
+----------
+pattern=[3, 8, 5, 1, 6, 7, 9, 2, 4]
+distance=19
+----------
+pattern=[1, 5, 7, 6, 4, 9, 2, 8, 3]
+distance=20
+----------
+pattern=[1, 8, 2, 7, 6, 4, 9, 5, 3]
+distance=20
+----------
+pattern=[2, 7, 6, 4, 9, 1, 8, 5, 3]
+distance=21
+----------
+pattern=[2, 9, 4, 5, 1, 7, 6, 8, 3]
+distance=19
+----------
+pattern=[2, 7, 6, 8, 1, 5, 4, 9, 3]
+distance=19
+----------
+pattern=[2, 5, 4, 9, 1, 8, 3, 7, 6]
+distance=22
+----------
+pattern=[2, 5, 3, 8, 1, 9, 4, 6, 7]
+distance=21
+----------
+pattern=[2, 6, 5, 7, 1, 8, 3, 4, 9]
+distance=19
+----------
+pattern=[2, 7, 5, 6, 1, 8, 4, 3, 9]
+distance=19
+----------
+pattern=[2, 7, 9, 6, 1, 8, 4, 3, 5]
+distance=19
+----------
+pattern=[4, 8, 5, 3, 1, 6, 7, 2, 9]
+distance=19
+----------
+pattern=[2, 9, 5, 4, 1, 6, 7, 3, 8]
+distance=20
+----------
+pattern=[2, 9, 5, 7, 1, 6, 4, 3, 8]
+distance=20
+----------
+pattern=[2, 9, 7, 6, 1, 4, 8, 3, 5]
+distance=19
+----------
+pattern=[4, 3, 7, 2, 9, 1, 6, 5, 8]
+distance=22
+----------
+pattern=[4, 3, 7, 2, 8, 1, 6, 5, 9]
+distance=21
+----------
+pattern=[4, 3, 8, 2, 9, 1, 6, 5, 7]
+distance=21
+----------
+pattern=[3, 4, 9, 2, 7, 1, 5, 6, 8]
+distance=19
+----------
+pattern=[5, 9, 7, 2, 4, 3, 6, 1, 8]
+distance=19
+----------
+pattern=[1, 6, 7, 2, 9, 3, 5, 4, 8]
+distance=19
+----------
+pattern=[1, 7, 6, 2, 9, 4, 5, 3, 8]
+distance=19
+----------
+pattern=[3, 9, 4, 2, 7, 6, 5, 1, 8]
+distance=19
+----------
+pattern=[4, 3, 8, 2, 9, 7, 5, 1, 6]
+distance=20
+----------
+pattern=[3, 8, 9, 2, 4, 7, 6, 1, 5]
+distance=18
+----------
+pattern=[1, 4, 9, 2, 6, 7, 8, 3, 5]
+distance=18
+----------
+pattern=[4, 3, 9, 2, 7, 8, 6, 1, 5]
+distance=19
+----------
+pattern=[1, 6, 9, 2, 7, 8, 4, 3, 5]
+distance=18
+----------
+pattern=[4, 3, 7, 2, 9, 8, 5, 1, 6]
+distance=20
+----------
+pattern=[3, 4, 7, 2, 9, 8, 6, 1, 5]
+distance=18
+----------
+pattern=[4, 3, 7, 2, 5, 9, 8, 1, 6]
+distance=20
+----------
+pattern=[3, 6, 7, 2, 4, 9, 8, 1, 5]
+distance=18
+----------
+pattern=[1, 8, 7, 2, 6, 9, 4, 3, 5]
+distance=18
+----------
+pattern=[1, 5, 3, 8, 2, 9, 4, 6, 7]
+distance=20
+----------
+pattern=[1, 8, 3, 5, 2, 6, 7, 9, 4]
+distance=19
+----------
+pattern=[1, 5, 4, 9, 2, 8, 3, 7, 6]
+distance=21
+----------
+pattern=[1, 6, 5, 7, 2, 9, 3, 4, 8]
+distance=19
+----------
+pattern=[1, 7, 5, 6, 2, 9, 4, 3, 8]
+distance=19
+----------
+pattern=[1, 8, 5, 6, 2, 7, 3, 4, 9]
+distance=20
+----------
+pattern=[3, 9, 5, 4, 2, 7, 6, 1, 8]
+distance=19
+----------
+pattern=[4, 9, 6, 7, 2, 3, 5, 1, 8]
+distance=18
+----------
+pattern=[5, 3, 6, 7, 2, 1, 8, 4, 9]
+distance=18
+----------
+pattern=[1, 6, 7, 9, 2, 5, 3, 8, 4]
+distance=19
+----------
+pattern=[5, 1, 8, 3, 2, 4, 9, 6, 7]
+distance=18
+----------
+pattern=[2, 1, 8, 3, 5, 9, 4, 7, 6]
+distance=18
+----------
+pattern=[2, 1, 8, 3, 6, 7, 5, 9, 4]
+distance=18
+----------
+pattern=[3, 1, 8, 6, 7, 2, 5, 9, 4]
+distance=19
+----------
+pattern=[2, 7, 9, 4, 3, 6, 8, 1, 5]
+distance=19
+----------
+pattern=[1, 8, 9, 4, 3, 6, 2, 7, 5]
+distance=18
+----------
+pattern=[2, 9, 5, 4, 3, 8, 6, 1, 7]
+distance=19
+----------
+pattern=[2, 9, 7, 4, 3, 8, 6, 1, 5]
+distance=19
+----------
+pattern=[2, 7, 5, 6, 3, 4, 9, 1, 8]
+distance=20
+----------
+pattern=[1, 8, 2, 7, 3, 4, 9, 5, 6]
+distance=21
+----------
+pattern=[1, 5, 6, 7, 3, 8, 2, 9, 4]
+distance=21
+----------
+pattern=[2, 7, 5, 9, 3, 4, 6, 1, 8]
+distance=20
+----------
+pattern=[1, 6, 2, 9, 8, 3, 4, 7, 5]
+distance=18
+----------
+pattern=[1, 5, 2, 9, 4, 6, 7, 3, 8]
+distance=21
+----------
+pattern=[1, 6, 2, 9, 7, 5, 8, 3, 4]
+distance=19
+----------
+pattern=[1, 6, 4, 3, 7, 2, 9, 5, 8]
+distance=21
+----------
+pattern=[1, 6, 4, 3, 8, 2, 9, 5, 7]
+distance=20
+----------
+pattern=[2, 9, 4, 3, 8, 6, 5, 1, 7]
+distance=19
+----------
+pattern=[2, 7, 4, 3, 5, 9, 8, 1, 6]
+distance=18
+----------
+pattern=[1, 8, 5, 3, 4, 9, 7, 2, 6]
+distance=19
+----------
+pattern=[2, 9, 5, 3, 8, 7, 6, 1, 4]
+distance=18
+----------
+pattern=[2, 7, 6, 3, 5, 1, 8, 9, 4]
+distance=18
+----------
+pattern=[2, 7, 6, 3, 5, 4, 9, 1, 8]
+distance=20
+----------
+pattern=[1, 6, 7, 3, 8, 4, 5, 2, 9]
+distance=20
+----------
+pattern=[1, 6, 7, 3, 8, 2, 9, 5, 4]
+distance=21
+----------
+pattern=[2, 9, 8, 3, 4, 7, 5, 1, 6]
+distance=18
+----------
+pattern=[5, 7, 8, 3, 4, 1, 6, 2, 9]
+distance=18
+----------
+pattern=[2, 9, 8, 3, 5, 1, 6, 7, 4]
+distance=18
+----------
+pattern=[2, 4, 9, 3, 8, 1, 5, 6, 7]
+distance=19
+----------
+pattern=[4, 2, 9, 3, 8, 7, 6, 1, 5]
+distance=19
+----------
+pattern=[1, 6, 5, 8, 4, 3, 7, 2, 9]
+distance=20
+----------
+pattern=[1, 3, 5, 8, 4, 9, 2, 7, 6]
+distance=19
+----------
+pattern=[2, 6, 7, 9, 4, 1, 8, 3, 5]
+distance=19
+----------
+pattern=[4, 3, 8, 7, 5, 2, 9, 1, 6]
+distance=20
+----------
+pattern=[2, 7, 3, 4, 5, 9, 6, 1, 8]
+distance=20
+----------
+pattern=[1, 8, 4, 9, 6, 7, 2, 3, 5]
+distance=18
+----------
+pattern=[2, 9, 4, 7, 6, 8, 3, 1, 5]
+distance=19
+----------
+pattern=[1, 8, 3, 7, 6, 2, 5, 4, 9]
+distance=20
+----------
+pattern=[2, 7, 3, 4, 6, 1, 8, 5, 9]
+distance=21
+----------
+pattern=[2, 4, 9, 7, 6, 3, 8, 1, 5]
+distance=19
+----------
+pattern=[3, 4, 5, 8, 6, 1, 9, 2, 7]
+distance=20
+----------
+pattern=[4, 3, 5, 9, 7, 2, 8, 1, 6]
+distance=20
+----------
+pattern=[4, 3, 5, 8, 7, 2, 9, 1, 6]
+distance=20
+----------
+pattern=[1, 3, 8, 5, 7, 6, 2, 9, 4]
+distance=19
+----------
+pattern=[2, 9, 4, 6, 7, 1, 5, 3, 8]
+distance=20
+----------
+pattern=[2, 7, 5, 9, 8, 1, 6, 3, 4]
+distance=18
+----------
+pattern=[3, 2, 7, 6, 8, 1, 4, 9, 5]
+distance=18
+----------
+pattern=[2, 9, 5, 7, 8, 3, 4, 1, 6]
+distance=18
+----------
+pattern=[1, 2, 9, 4, 8, 3, 6, 7, 5]
+distance=18
+----------
+pattern=[1, 6, 3, 4, 8, 9, 2, 7, 5]
+distance=18
+----------
+pattern=[1, 3, 8, 4, 9, 2, 5, 7, 6]
+distance=19
+----------
+pattern=[2, 7, 3, 4, 9, 6, 5, 1, 8]
+distance=20
+----------
+pattern=[2, 7, 3, 4, 9, 1, 8, 5, 6]
+distance=22
+----------
+pattern=[2, 7, 6, 4, 9, 3, 5, 1, 8]
+distance=20
+----------
+pattern=[1, 8, 3, 4, 9, 7, 5, 2, 6]
+distance=19
+----------
+==========
+%%%mzn-stat: initTime=0.001479
+%%%mzn-stat: solveTime=0.198301
+%%%mzn-stat: solutions=121
+%%%mzn-stat: variables=299
+%%%mzn-stat: propagators=305
+%%%mzn-stat: propagations=2600036
+%%%mzn-stat: nodes=35799
+%%%mzn-stat: failures=17779
+%%%mzn-stat: restarts=0
+%%%mzn-stat: peakDepth=16
+%%%mzn-stat-end
+%%%mzn-stat: nSolutions=121
+%%%mzn-stat-end

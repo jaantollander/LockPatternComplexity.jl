@@ -9,7 +9,7 @@ makedocs(;
     repo="https://github.com/jaantollander/LockPatternComplexity.jl/blob/{commit}{path}#{line}",
     sitename="LockPatternComplexity.jl",
     format=Documenter.HTML(;
-        prettyurls=get(ENV, "CI", "false") == "true",
+        prettyurls=true,
         canonical="https://jaantollander.github.io/LockPatternComplexity.jl",
         assets=String[],
     ),
