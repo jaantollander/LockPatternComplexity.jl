@@ -1,0 +1,201 @@
+% Generated FlatZinc statistics:
+%%%mzn-stat: paths=3992
+%%%mzn-stat: flatBoolVars=2778
+%%%mzn-stat: flatIntVars=172
+%%%mzn-stat: flatBoolConstraints=2190
+%%%mzn-stat: flatIntConstraints=769
+%%%mzn-stat: evaluatedReifiedConstraints=570
+%%%mzn-stat: evaluatedHalfReifiedConstraints=48
+%%%mzn-stat: method="maximize"
+%%%mzn-stat: flatTime=0.485238
+%%%mzn-stat-end
+
+pattern=[3, 17, 1, 24, 7, 13, 10, 12, 5, 16, 19, 8, 18, 9, 22, 14, 6, 25, 11, 20, 21, 4, 23, 2, 15]
+distance=110
+----------
+% Pruned 49967 learnt clauses
+% Pruned 49917 learnt clauses
+% Pruned 49941 learnt clauses
+% Pruned 49923 learnt clauses
+% Pruned 49902 learnt clauses
+% Pruned 49936 learnt clauses
+% Pruned 49939 learnt clauses
+% Pruned 49900 learnt clauses
+% Pruned 49935 learnt clauses
+% Pruned 49891 learnt clauses
+pattern=[3, 24, 7, 15, 6, 16, 13, 5, 22, 8, 20, 1, 23, 4, 17, 19, 12, 25, 2, 18, 9, 11, 10, 21, 14]
+distance=111
+----------
+% Pruned 49989 learnt clauses
+% Pruned 49912 learnt clauses
+pattern=[3, 22, 5, 16, 15, 2, 19, 12, 10, 6, 14, 17, 8, 21, 9, 23, 7, 25, 4, 11, 20, 1, 24, 13, 18]
+distance=113
+----------
+% Pruned 49994 learnt clauses
+% Pruned 49947 learnt clauses
+% Pruned 49852 learnt clauses
+% Pruned 49953 learnt clauses
+% Pruned 49993 learnt clauses
+% Pruned 49881 learnt clauses
+% Pruned 49861 learnt clauses
+% Pruned 49873 learnt clauses
+% Pruned 49883 learnt clauses
+% Pruned 49907 learnt clauses
+% Pruned 49834 learnt clauses
+% Pruned 49739 learnt clauses
+% Pruned 49827 learnt clauses
+% Pruned 49826 learnt clauses
+% Pruned 49816 learnt clauses
+% Pruned 49804 learnt clauses
+% Pruned 49802 learnt clauses
+% Pruned 49792 learnt clauses
+% Pruned 49783 learnt clauses
+% Pruned 49783 learnt clauses
+% Pruned 49726 learnt clauses
+% Pruned 49926 learnt clauses
+% Pruned 49909 learnt clauses
+% Pruned 49880 learnt clauses
+% Pruned 49876 learnt clauses
+% Pruned 49872 learnt clauses
+% Pruned 49854 learnt clauses
+% Pruned 49832 learnt clauses
+% Pruned 49913 learnt clauses
+% Pruned 49885 learnt clauses
+pattern=[14, 8, 25, 11, 19, 3, 22, 5, 6, 15, 21, 10, 12, 13, 23, 2, 24, 1, 20, 7, 16, 9, 17, 4, 18]
+distance=114
+----------
+% Pruned 49971 learnt clauses
+% Pruned 49958 learnt clauses
+% Pruned 49982 learnt clauses
+% Pruned 49914 learnt clauses
+% Pruned 49930 learnt clauses
+% Pruned 49925 learnt clauses
+% Pruned 49803 learnt clauses
+% Pruned 49922 learnt clauses
+% Pruned 49912 learnt clauses
+% Pruned 49916 learnt clauses
+% Pruned 49776 learnt clauses
+% Pruned 49916 learnt clauses
+% Pruned 49896 learnt clauses
+% Pruned 49898 learnt clauses
+% Pruned 49851 learnt clauses
+% Pruned 49884 learnt clauses
+% Pruned 49878 learnt clauses
+% Pruned 49868 learnt clauses
+% Pruned 49762 learnt clauses
+% Pruned 49860 learnt clauses
+% Pruned 49832 learnt clauses
+% Pruned 49863 learnt clauses
+% Pruned 49790 learnt clauses
+% Pruned 49823 learnt clauses
+% Pruned 49875 learnt clauses
+% Pruned 49837 learnt clauses
+% Pruned 49852 learnt clauses
+% Pruned 49874 learnt clauses
+% Pruned 49869 learnt clauses
+% Pruned 49867 learnt clauses
+% Pruned 49855 learnt clauses
+% Pruned 49852 learnt clauses
+% Pruned 49848 learnt clauses
+% Pruned 49791 learnt clauses
+% Pruned 49862 learnt clauses
+% Pruned 49850 learnt clauses
+% Pruned 49850 learnt clauses
+% Pruned 49831 learnt clauses
+% Pruned 49844 learnt clauses
+% Pruned 49832 learnt clauses
+% Pruned 49836 learnt clauses
+% Pruned 49831 learnt clauses
+% Pruned 49822 learnt clauses
+% Pruned 49826 learnt clauses
+% Pruned 49825 learnt clauses
+% Pruned 49817 learnt clauses
+% Pruned 49804 learnt clauses
+% Pruned 49722 learnt clauses
+% Pruned 49710 learnt clauses
+% Pruned 49821 learnt clauses
+% Pruned 49723 learnt clauses
+% Pruned 49760 learnt clauses
+% Pruned 49818 learnt clauses
+% Pruned 49808 learnt clauses
+% Pruned 49809 learnt clauses
+% Pruned 49807 learnt clauses
+% Pruned 49793 learnt clauses
+% Pruned 49721 learnt clauses
+% Pruned 49762 learnt clauses
+% Pruned 49802 learnt clauses
+% Pruned 49797 learnt clauses
+% Pruned 49799 learnt clauses
+% Pruned 49789 learnt clauses
+% Pruned 49685 learnt clauses
+% Pruned 49771 learnt clauses
+% Pruned 49755 learnt clauses
+% Pruned 49746 learnt clauses
+% Pruned 49776 learnt clauses
+% Pruned 49768 learnt clauses
+% Pruned 49758 learnt clauses
+% Pruned 49771 learnt clauses
+% Pruned 49664 learnt clauses
+% Pruned 49666 learnt clauses
+% Pruned 49763 learnt clauses
+% Pruned 49765 learnt clauses
+% Pruned 49755 learnt clauses
+% Pruned 49749 learnt clauses
+% Pruned 49741 learnt clauses
+% Pruned 49597 learnt clauses
+% Pruned 49715 learnt clauses
+% Pruned 49733 learnt clauses
+% Pruned 49663 learnt clauses
+% Pruned 49657 learnt clauses
+% Pruned 49962 learnt clauses
+% Pruned 49930 learnt clauses
+% Pruned 49929 learnt clauses
+% Pruned 49903 learnt clauses
+% Pruned 49895 learnt clauses
+% Pruned 49888 learnt clauses
+% Pruned 49925 learnt clauses
+% Pruned 49871 learnt clauses
+% Pruned 49835 learnt clauses
+% Pruned 49908 learnt clauses
+% Pruned 49873 learnt clauses
+% Pruned 49873 learnt clauses
+% Pruned 49877 learnt clauses
+% Pruned 49862 learnt clauses
+% Pruned 49855 learnt clauses
+% Pruned 49852 learnt clauses
+% Pruned 49823 learnt clauses
+% Pruned 49854 learnt clauses
+% Pruned 49833 learnt clauses
+% Pruned 49859 learnt clauses
+% Pruned 49841 learnt clauses
+% Pruned 49843 learnt clauses
+% Pruned 49845 learnt clauses
+% Pruned 49840 learnt clauses
+% Pruned 49826 learnt clauses
+% Pruned 49838 learnt clauses
+% Pruned 49832 learnt clauses
+% Pruned 49827 learnt clauses
+% Pruned 49801 learnt clauses
+% Pruned 49809 learnt clauses
+% Pruned 49799 learnt clauses
+% Pruned 49801 learnt clauses
+%%%mzn-stat: nodes=13824043
+%%%mzn-stat: failures=7903583
+%%%mzn-stat: restarts=4
+%%%mzn-stat: variables=6634
+%%%mzn-stat: intVars=172
+%%%mzn-stat: boolVariables=6460
+%%%mzn-stat: propagators=1771
+%%%mzn-stat: propagations=2697641489
+%%%mzn-stat: peakDepth=203
+%%%mzn-stat: nogoods=7903583
+%%%mzn-stat: backjumps=5920206
+%%%mzn-stat: peakMem=0.00
+%%%mzn-stat: time=3332.800
+%%%mzn-stat: initTime=0.021
+%%%mzn-stat: solveTime=3332.779
+%%%mzn-stat: objective=114
+%%%mzn-stat: optTime=762.161
+%%%mzn-stat: baseMem=0.00
+%%%mzn-stat: trailMem=0.04
+%%%mzn-stat: randomSeed=1638450170

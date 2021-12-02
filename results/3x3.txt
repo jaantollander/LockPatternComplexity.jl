@@ -6,7 +6,7 @@
 %%%mzn-stat: flatIntConstraints=105
 %%%mzn-stat: evaluatedHalfReifiedConstraints=80
 %%%mzn-stat: method="satisfy"
-%%%mzn-stat: flatTime=0.0739996
+%%%mzn-stat: flatTime=0.0684575
 %%%mzn-stat-end
 
 pattern=[1, 8, 3, 7, 6, 4, 9, 5, 2]
@@ -373,8 +373,8 @@ pattern=[1, 8, 3, 4, 9, 7, 5, 2, 6]
 distance=19
 ----------
 ==========
-%%%mzn-stat: initTime=0.001479
-%%%mzn-stat: solveTime=0.198301
+%%%mzn-stat: initTime=0.001559
+%%%mzn-stat: solveTime=0.195956
 %%%mzn-stat: solutions=121
 %%%mzn-stat: variables=299
 %%%mzn-stat: propagators=305

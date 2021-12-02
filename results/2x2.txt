@@ -1,25 +1,31 @@
 % Generated FlatZinc statistics:
 %%%mzn-stat: paths=0
-%%%mzn-stat: flatBoolVars=42
-%%%mzn-stat: flatIntVars=12
+%%%mzn-stat: flatBoolVars=46
+%%%mzn-stat: flatIntVars=16
 %%%mzn-stat: flatBoolConstraints=28
-%%%mzn-stat: flatIntConstraints=33
-%%%mzn-stat: evaluatedHalfReifiedConstraints=18
+%%%mzn-stat: flatIntConstraints=38
+%%%mzn-stat: evaluatedReifiedConstraints=18
 %%%mzn-stat: method="satisfy"
-%%%mzn-stat: flatTime=0.0697811
+%%%mzn-stat: flatTime=0.0640647
 %%%mzn-stat-end
 
-=====UNSATISFIABLE=====
-%%%mzn-stat: initTime=0.00043
-%%%mzn-stat: solveTime=9.4e-05
-%%%mzn-stat: solutions=0
-%%%mzn-stat: variables=54
-%%%mzn-stat: propagators=61
-%%%mzn-stat: propagations=445
-%%%mzn-stat: nodes=13
+pattern=[1, 4, 3, 2]
+distance=5
+----------
+pattern=[1, 4, 2, 3]
+distance=5
+----------
+==========
+%%%mzn-stat: initTime=0.000481
+%%%mzn-stat: solveTime=0.000136
+%%%mzn-stat: solutions=2
+%%%mzn-stat: variables=62
+%%%mzn-stat: propagators=66
+%%%mzn-stat: propagations=642
+%%%mzn-stat: nodes=17
 %%%mzn-stat: failures=7
 %%%mzn-stat: restarts=0
-%%%mzn-stat: peakDepth=2
+%%%mzn-stat: peakDepth=3
 %%%mzn-stat-end
-%%%mzn-stat: nSolutions=0
+%%%mzn-stat: nSolutions=2
 %%%mzn-stat-end
