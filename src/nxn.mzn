@@ -33,30 +33,22 @@ array[1..m-1] of var int: dx = [x[p[i]] - x[p[i+1]] | i in 1..m-1];
 array[1..m-1] of var int: dy = [y[p[i]] - y[p[i+1]] | i in 1..m-1];
 
 % Maximum complexity constraints.
-% Enforce that there exists one of each line type.
 predicate line(int: x1, int: y1, int: k) = exists(i in 1..m-1, c in 1..k)(
     (dx[i] = c*x1 /\ dy[i] = c*y1) \/ (dx[i] = -c*x1 /\ dy[i] = -c*y1)
 );
 
-% Greatest common divisor
-function int: gcd(int: a, int: b) = max(
-    [i | i in 1..min(a, b) where (a mod i) = 0 /\ (b mod i) = 0]
-);
+int: N;
+array[1..N] of int: xs;
+array[1..N] of int: ys;
+array[1..N] of int: ds;
+constraint count(i in 1..N)(line(xs[i], ys[i], ds[i])) = min(N, m-1);
+% constraint forall(i in 1..N)(line(xs[i], ys[i], ds[i]));
 
-constraint line(0, 1, n-1);
-constraint line(1, 0, n-1);
-constraint line(1, 1, n-1);
-constraint line(1, -1, n-1);
-constraint forall(x1 in 1..n-2, y1 in (x1+1)..n-1 where gcd(x1, y1)=1)(
-    let {int: d = (n-1) div y1} in
-    line(x1, y1, d) /\
-    line(y1, x1, d) /\
-    line(x1, -y1, d) /\
-    line(y1, -x1, d)
-);
+% Find max complexity patterns
+solve satisfy;
+output ["pattern=\(p)", "\n", "distance=\(sum(i in 1..m-1)(abs(dx[i]) + abs(dy[i])))"];
 
 % Maximize distance
-solve satisfy;
-
-% Print output
-output ["pattern=\(p)", "\n", "distance=\(sum(i in 1..m-1)(abs(dx[i]) + abs(dy[i])))"];
+% var int: distance = sum(i in 1..m-1)(abs(dx[i]) + abs(dy[i]));
+% solve maximize distance;
+% output ["pattern=\(p)", "\n", "distance=\(distance)"];

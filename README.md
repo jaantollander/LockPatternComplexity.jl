@@ -51,20 +51,16 @@ The [`src/nxn.mzn`](./src/nxn.mzn) file contains the MiniZinc constraint program
 
 The [`src/plots.jl`](./src/plots.jl) file contains the plotting code.
 
-Each `nxn.sh` shell script inside [`scripts`](./scripts/) contains the command for running the model for the grid of given size.
+Use [`script/run.jl`](./scripts/run.jl) Julia script for running the model for the grid of given size.
+
+Use [`script/plot.jl`](./scripts/plot.jl) Julia script to plot results.
 
 The [`results`](./results/) directory contains the output from the shell scripts and the generated SVG plots for each grid size and taxicab distance in format `<grid>/<distance>/<id>.svg`.
 
 
 ## Instructions
-We can begin by installing MiniZinc and adding it to our PATH environment variable. The, we can run the appropriate shell file from the `src` directory and write the output to `results/3x3.txt` file. For example:
+We can begin by installing MiniZinc and adding it to our PATH environment variable. The, we can run the appropriate shell file from the `script` directory and write the output to `results/3x3.txt` file. For example:
 
 ```bash
-./scripts/3x3.sh > results/3x3.txt
-```
-
-Alternatively, we can run the MiniZinc model directly.
-
-```bash
-minizinc src/nxn.mzn -s -a --solver gecode -D "n=3;"
+julia scripts/run.jl -n 3 --minizinc `which minizinc`
 ```
