@@ -8,7 +8,7 @@ end
 
 function command(n::Int, minizinc, solver, flags)::Cmd
     d = data(n)
-    return `$minizinc src/nxn.mzn -D $d --solver $solver $flags`
+    return `$minizinc src/nxn_sat.mzn -D $d --solver $solver $flags`
 end
 
 s = ArgParseSettings()

@@ -46,12 +46,3 @@ constraint if N = m-1 then
 else
     count(i in 1..N)(line(xs[i], ys[i], ds[i])) = min(N, m-1)
 endif;
-
-% Find max complexity patterns
-solve satisfy;
-output ["pattern=\(p)", "\n", "distance=\(sum(i in 1..m-1)(abs(dx[i]) + abs(dy[i])))"];
-
-% Maximize distance
-% var int: distance = sum(i in 1..m-1)(abs(dx[i]) + abs(dy[i]));
-% solve maximize distance;
-% output ["pattern=\(p)", "\n", "distance=\(distance)"];
