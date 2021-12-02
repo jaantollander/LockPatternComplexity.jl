@@ -41,8 +41,11 @@ int: N;
 array[1..N] of int: xs;
 array[1..N] of int: ys;
 array[1..N] of int: ds;
-constraint count(i in 1..N)(line(xs[i], ys[i], ds[i])) = min(N, m-1);
-% constraint forall(i in 1..N)(line(xs[i], ys[i], ds[i]));
+constraint if N = m-1 then
+    forall(i in 1..N)(line(xs[i], ys[i], ds[i]))
+else
+    count(i in 1..N)(line(xs[i], ys[i], ds[i])) = min(N, m-1)
+endif;
 
 % Find max complexity patterns
 solve satisfy;
