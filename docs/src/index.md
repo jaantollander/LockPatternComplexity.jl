@@ -90,21 +90,23 @@ Plot $|T|$, $n^2-1$, and $12⋅(n-1)^2/π^2$.
 
 
 ## Maximum Complexity Pattern
-A pattern $L^{′}$, when there are more line types than lines in the pattern $|T|≥|L^{′}|,$ is **max complexity pattern** if each line type is unique.
+The set of lines types for the pattern $L^{′}$ is
 
-$$\mathtt{alldifferent}(t(i_1,j_1), t(i_2,j_2), ..., t(i_{m-1},j_{m-1})).$$
+$$T^{′}=\{t(i, j) ∣ (i,j)∈L^{′}\}.$$
+
+When there are more line types than lines in the pattern $|T|≥|L^{′}|,$ the pattern is a **max complexity pattern** if each line type is unique.
+
+$$|T^{′}|=|L^{′}|$$
 
 When $|T|=|L^{′}|$ the lines types cover all line types.
 
-$$T^{′}=\{t(i_1,j_1), t(i_2,j_2), ..., t(i_{m-1},j_{m-1})\}=T.$$
-
 
 ## Taxicab Distance
-The set of differences in the pattern is
+The set of differences for the pattern $L^{′}$ is
 
 $$Δ^{′}=\{(x_{i,j}, y_{i,j})∣ (i,j)∈L^{′}\}.$$
 
-Taxicab distance
+Then, we define the Taxicab distance as
 
 $$d=∑_{(x,y)∈Δ^{′}} (|x|+|y|).$$
 
