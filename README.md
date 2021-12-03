@@ -6,8 +6,13 @@ distance: 22 | distance: 116
 
 4×4 | 6×6
 :-:|:-:
-![](plots/4x4/60/7406136358885409782.svg) | ![](plots/6x6/188/1547877444729350065.svg)
-distance: 60 | distance: 188
+![](plots/4x4/60/7406136358885409782.svg) | ![](plots/6x6/195/10936289823656114753.svg)
+distance: 60 | distance: 195
+
+7×7 | 7×7
+:-: | :-:
+![](plots/7x7/306/6525101948841144785.svg) | ![](plots/7x7/304/11862866912315233929.svg)
+distance=306 | distance=304
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/stable)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/dev)
@@ -39,7 +44,7 @@ Can we find a max complexity pattern for 4×4 grid that provably maximizes the t
 
 Can we find a max complexity pattern for 5×5 grid that provably maximizes the taxicab distance?
 
-Can we find a max complexity pattern for 7×7 grid?
+~~Can we find a max complexity pattern for 7×7 grid?~~
 
 <!-- We can generalize the definition of pattern complexity as maximizing the number of line types used in the pattern as primary objective and maximizing the taxicab distance as secondary objective. In the generalized definition, every grid size would have solutions. Also, it would preserve the max complexity patterns. -->
 
