@@ -1,12 +1,12 @@
 # Solving the Most Complex Lock Patterns
 3×3 | 5×5
 :-:|:-:
-![](results/3x3/22/8827232152991697021.svg) | ![](results/5x5/116/10911156195890606180.svg)
+![](plots/3x3/22/8827232152991697021.svg) | ![](plots/5x5/116/10911156195890606180.svg)
 distance: 22 | distance: 116
 
 4×4 | 6×6
 :-:|:-:
-![](results/4x4/60/7406136358885409782.svg) | ![](results/6x6/188/1547877444729350065.svg)
+![](plots/4x4/60/7406136358885409782.svg) | ![](plots/6x6/188/1547877444729350065.svg)
 distance: 60 | distance: 188
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/stable)
@@ -51,16 +51,16 @@ The [`src/nxn.mzn`](./src/nxn.mzn) file contains the MiniZinc constraint program
 
 The [`src/plots.jl`](./src/plots.jl) file contains the plotting code.
 
-Use [`script/run.jl`](./scripts/run.jl) Julia script for running the model for the grid of given size.
+Use [`scripts/run.jl`](./scripts/run.jl) Julia script for running the model for the grid of given size.
 
-Use [`script/plot.jl`](./scripts/plot.jl) Julia script to plot results.
+Use [`scripts/plot.jl`](./scripts/plot.jl) Julia script to plot results.
 
 The [`results`](./results/) directory contains the output from the shell scripts and the generated SVG plots for each grid size and taxicab distance in format `<grid>/<distance>/<id>.svg`.
 
 
 ## Instructions
-We can begin by installing MiniZinc and adding it to our PATH environment variable. The, we can run the appropriate shell file from the `script` directory and write the output to `results/3x3.txt` file. For example:
+We can begin by installing MiniZinc and adding it to our PATH environment variable. The, we can run Julia file from the `scripts` directory and write the output to `results/3x3.txt` file. For example:
 
 ```bash
-julia scripts/run.jl -n 3 --minizinc `which minizinc`
+julia scripts/run.jl -n 3 --minizinc `which minizinc` > results/3x3.txt
 ```

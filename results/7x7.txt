@@ -1,0 +1,110 @@
+% Generated FlatZinc statistics:
+%%%mzn-stat: paths=14592
+%%%mzn-stat: flatBoolVars=10254
+%%%mzn-stat: flatIntVars=147
+%%%mzn-stat: flatBoolConstraints=8634
+%%%mzn-stat: flatIntConstraints=1776
+%%%mzn-stat: evaluatedReifiedConstraints=1578
+%%%mzn-stat: evaluatedHalfReifiedConstraints=96
+%%%mzn-stat: method="satisfy"
+%%%mzn-stat: flatTime=1.35895
+%%%mzn-stat-end
+
+% Pruned 49738 learnt clauses
+% Pruned 40287 learnt clauses
+% Pruned 40211 learnt clauses
+% Pruned 42757 learnt clauses
+% Pruned 41510 learnt clauses
+% Pruned 41171 learnt clauses
+% Pruned 39300 learnt clauses
+% Pruned 37983 learnt clauses
+% Pruned 36216 learnt clauses
+% Pruned 36110 learnt clauses
+% Pruned 33770 learnt clauses
+% Pruned 30946 learnt clauses
+% Pruned 31630 learnt clauses
+% Pruned 29715 learnt clauses
+% Pruned 28751 learnt clauses
+% Pruned 25401 learnt clauses
+% Pruned 26012 learnt clauses
+% Pruned 32710 learnt clauses
+% Pruned 31500 learnt clauses
+% Pruned 30703 learnt clauses
+% Pruned 32699 learnt clauses
+% Pruned 33743 learnt clauses
+% Pruned 30658 learnt clauses
+% Pruned 30539 learnt clauses
+% Pruned 31746 learnt clauses
+% Pruned 26186 learnt clauses
+% Pruned 33745 learnt clauses
+% Pruned 36289 learnt clauses
+% Pruned 36432 learnt clauses
+% Pruned 35409 learnt clauses
+% Pruned 31421 learnt clauses
+% Pruned 29444 learnt clauses
+% Pruned 29235 learnt clauses
+% Pruned 25884 learnt clauses
+% Pruned 29301 learnt clauses
+% Pruned 33210 learnt clauses
+% Pruned 33356 learnt clauses
+% Pruned 36534 learnt clauses
+% Pruned 36555 learnt clauses
+% Pruned 38091 learnt clauses
+% Pruned 31861 learnt clauses
+% Pruned 28862 learnt clauses
+% Pruned 28686 learnt clauses
+% Pruned 27427 learnt clauses
+% Pruned 24762 learnt clauses
+% Pruned 27638 learnt clauses
+% Pruned 28350 learnt clauses
+% Pruned 27441 learnt clauses
+% Pruned 26783 learnt clauses
+% Pruned 30059 learnt clauses
+% Pruned 37542 learnt clauses
+% Pruned 31927 learnt clauses
+% Pruned 30832 learnt clauses
+% Pruned 30434 learnt clauses
+% Pruned 28474 learnt clauses
+% Pruned 26545 learnt clauses
+% Pruned 33861 learnt clauses
+% Pruned 41163 learnt clauses
+% Pruned 40945 learnt clauses
+% Pruned 38259 learnt clauses
+% Pruned 43088 learnt clauses
+% Pruned 45054 learnt clauses
+% Pruned 46916 learnt clauses
+% Pruned 45431 learnt clauses
+% Pruned 38939 learnt clauses
+% Pruned 31568 learnt clauses
+% Pruned 27266 learnt clauses
+% Pruned 24062 learnt clauses
+% Pruned 36763 learnt clauses
+% Pruned 44296 learnt clauses
+% Pruned 36961 learnt clauses
+% Pruned 32592 learnt clauses
+% Pruned 33866 learnt clauses
+% Pruned 31628 learnt clauses
+% Pruned 34005 learnt clauses
+% Pruned 35220 learnt clauses
+% Pruned 36501 learnt clauses
+% Pruned 36200 learnt clauses
+% Pruned 37786 learnt clauses
+% Pruned 35967 learnt clauses
+%%%mzn-stat: nodes=6436267
+%%%mzn-stat: failures=2772964
+%%%mzn-stat: restarts=0
+%%%mzn-stat: variables=16778
+%%%mzn-stat: intVars=147
+%%%mzn-stat: boolVariables=16629
+%%%mzn-stat: propagators=4505
+%%%mzn-stat: propagations=1453011675
+%%%mzn-stat: peakDepth=552
+%%%mzn-stat: nogoods=2772964
+%%%mzn-stat: backjumps=3663113
+%%%mzn-stat: peakMem=0.00
+%%%mzn-stat: time=1596.424
+%%%mzn-stat: initTime=0.073
+%%%mzn-stat: solveTime=1596.351
+%%%mzn-stat: baseMem=0.00
+%%%mzn-stat: trailMem=0.08
+%%%mzn-stat: randomSeed=1638455393
