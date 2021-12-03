@@ -1,0 +1,75 @@
+% Generated FlatZinc statistics:
+%%%mzn-stat: paths=14592
+%%%mzn-stat: flatBoolVars=10254
+%%%mzn-stat: flatIntVars=147
+%%%mzn-stat: flatBoolConstraints=8634
+%%%mzn-stat: flatIntConstraints=1776
+%%%mzn-stat: evaluatedReifiedConstraints=1578
+%%%mzn-stat: evaluatedHalfReifiedConstraints=96
+%%%mzn-stat: method="satisfy"
+%%%mzn-stat: flatTime=2.73502
+%%%mzn-stat-end
+
+% Pruned 50000 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49993 learnt clauses
+% Pruned 49984 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49989 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49997 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49993 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49991 learnt clauses
+% Pruned 49989 learnt clauses
+% Pruned 49988 learnt clauses
+% Pruned 49986 learnt clauses
+% Pruned 49983 learnt clauses
+% Pruned 49979 learnt clauses
+% Pruned 49974 learnt clauses
+% Pruned 49987 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49823 learnt clauses
+% Pruned 49699 learnt clauses
+% Pruned 47410 learnt clauses
+% Pruned 46756 learnt clauses
+% Pruned 46319 learnt clauses
+% Pruned 44061 learnt clauses
+% Pruned 40218 learnt clauses
+% Pruned 39521 learnt clauses
+% Pruned 49981 learnt clauses
+% Pruned 49814 learnt clauses
+% Pruned 49963 learnt clauses
+% Pruned 49799 learnt clauses
+% Pruned 49868 learnt clauses
+% Pruned 49949 learnt clauses
+% Pruned 41876 learnt clauses
+% Pruned 47409 learnt clauses
+% Pruned 49726 learnt clauses
+% Pruned 49983 learnt clauses
+% Pruned 49899 learnt clauses
+% Pruned 49328 learnt clauses
+% Pruned 37674 learnt clauses
+pattern=[42, 3, 39, 32, 40, 17, 46, 5, 36, 2, 19, 30, 13, 45, 20, 10, 35, 22, 21, 25, 26, 4, 41, 15, 12, 31, 18, 38, 11, 44, 29, 24, 33, 27, 8, 49, 6, 43, 14, 37, 28, 16, 47, 9, 7, 23, 34, 1, 48]
+distance=294
+----------
+% Pruned 31709 learnt clauses
+% Pruned 33223 learnt clauses
+% Pruned 30919 learnt clauses
+% Pruned 29164 learnt clauses
+% Pruned 31676 learnt clauses
+pattern=[42, 3, 26, 29, 40, 10, 46, 5, 36, 2, 39, 30, 13, 45, 12, 32, 24, 25, 38, 11, 33, 4, 23, 35, 22, 18, 28, 37, 21, 44, 19, 31, 20, 27, 8, 49, 6, 43, 14, 15, 41, 16, 47, 9, 7, 17, 34, 1, 48]
+distance=302
+----------
+% Pruned 29853 learnt clauses
+pattern=[42, 3, 26, 18, 40, 10, 46, 5, 36, 2, 39, 30, 19, 45, 13, 29, 20, 23, 35, 22, 33, 4, 37, 12, 31, 11, 28, 25, 21, 44, 17, 38, 32, 27, 8, 49, 6, 43, 14, 15, 41, 16, 47, 9, 7, 24, 34, 1, 48]
+distance=304
+----------
+pattern=[42, 3, 26, 18, 40, 10, 46, 5, 36, 2, 39, 30, 25, 45, 13, 29, 20, 23, 35, 22, 33, 4, 31, 12, 37, 19, 32, 28, 11, 44, 21, 17, 38, 27, 8, 49, 6, 43, 14, 15, 41, 16, 47, 9, 7, 24, 34, 1, 48]
+distance=306
+----------
