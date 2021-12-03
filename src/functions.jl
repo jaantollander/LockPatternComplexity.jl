@@ -7,32 +7,56 @@ end
 function line_types(n::Int)
     xs = Int[0, 1, 1, 1]
     ys = Int[1, 0, 1, -1]
-    ds = Int[n-1, n-1, n-1, n-1]
+    ks = Int[n-1, n-1, n-1, n-1]
     for x1 = 1:n-2
         for y1 = (x1+1):n-1
             if gcd(x1, y1) == 1
-                d = div(n - 1, y1)
+                k = div(n - 1, y1)
                 # 1
                 push!(xs, x1)
                 push!(ys, y1)
-                push!(ds, d)
+                push!(ks, k)
                 # 2
                 push!(xs, y1)
                 push!(ys, x1)
-                push!(ds, d)
+                push!(ks, k)
                 # 3
                 push!(xs, x1)
                 push!(ys, -y1)
-                push!(ds, d)
+                push!(ks, k)
                 # 4
                 push!(xs, y1)
                 push!(ys, -x1)
-                push!(ds, d)
+                push!(ks, k)
             end
         end
     end
-    N = length(ds)
-    return N, xs, ys, ds
+    return xs, ys, ks
+end
+
+function symmetries(n::Int)
+    # Horizontal reflection
+    reflect = [j + i*n for i in 0:n-1 for j in n:-1:1]
+    # Rotate 90 degrees
+    r90 = [j + i*n for j in 1:n for i in n-1:-1:0]
+    r180 = r90[r90]
+    r270 = r180[r90]
+    r180_reflect = r180[reflect]
+    r270_reflect = r270[reflect]
+    return r90, r180, r270, reflect, r180_reflect, r270_reflect
+end
+
+function data(n::Int)
+    m = n^2
+    M = m - 1
+    x, y = grid(n)
+    xs, ys, ks = line_types(n)
+    N = length(ks)
+    r90, r180, r270, reflect, r180_reflect, r270_reflect = symmetries(n)
+    return ["n=$n;", "m=$m;", "x=$x;", "y=$y;", "M=$M;", "N=$N;", 
+            "xs=$(xs);", "ys=$(ys);", "ks=$(ks);",
+            "r90=$r90;", "r180=$r180;", "r270=$r270;", "reflect=$reflect;",
+            "r180_reflect=$r180_reflect;", "r270_reflect=$r270_reflect;"]
 end
 
 function line_type(x1::Int, x2::Int, y1::Int, y2::Int)
@@ -69,5 +93,3 @@ function extract_solutions(file::AbstractString)
     end
     return results
 end
-
-# TODO: lock pattern symmetries

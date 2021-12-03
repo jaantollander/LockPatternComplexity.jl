@@ -1,14 +1,9 @@
 using LockPatternComplexity
 using ArgParse
 
-function data(n::Int)
-    N, xs, ys, ds = line_types(n)
-    return "n=$n;N=$N;xs=$(xs);ys=$(ys);ds=$(ds);"
-end
-
 function command(n::Int, minizinc, solver, flags)::Cmd
-    d = data(n)
-    return `$minizinc src/nxn_sat.mzn -D $d --solver $solver $flags`
+    d = join(data(n), "")
+    return `$minizinc models/nxn_sat.mzn -D $d --solver $solver $flags`
 end
 
 s = ArgParseSettings()
@@ -34,6 +29,7 @@ function cmd(n)
     n == 4 && return command(4, minizinc, "chuffed", ["--all-solutions", "--statistics", "--two-pass"])
     n == 5 && return command(5, minizinc, "chuffed", ["--all-solutions", "--statistics", "--two-pass"])
     n == 6 && return command(6, minizinc, "chuffed", ["--all-solutions", "--statistics", "--two-pass"])
+    n == 7 && return command(7, minizinc, "chuffed", ["--all-solutions", "--statistics", "--two-pass"])
     error("")
 end
 
