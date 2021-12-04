@@ -17,6 +17,7 @@ distance=307 | distance=306
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/stable)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/dev)
 [![Build Status](https://github.com/jaantollander/LockPatternComplexity.jl/workflows/CI/badge.svg)](https://github.com/jaantollander/LockPatternComplexity.jl/actions)
+[![DOI](https://zenodo.org/badge/433790288.svg)](https://zenodo.org/badge/latestdoi/433790288)
 
 Solving the most complex lock patterns using Constraint Programming with [MiniZinc](https://www.minizinc.org/).
 
