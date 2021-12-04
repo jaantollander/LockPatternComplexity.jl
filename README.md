@@ -1,18 +1,18 @@
 # Solving the Most Complex Lock Patterns
-3×3 | 5×5
+3×3 | 4×4
 :-:|:-:
-![](plots/3x3/22/8827232152991697021.svg) | ![](plots/5x5/116/10911156195890606180.svg)
-distance: 22 | distance: 116
+![](plots/3x3/22/8827232152991697021.svg) | ![](plots/4x4/61/3959962646779093142.svg)
+distance: 22* | distance: 61*
 
-4×4 | 6×6
+5×5 | 6×6
 :-:|:-:
-![](plots/4x4/60/7406136358885409782.svg) | ![](plots/6x6/195/10936289823656114753.svg)
-distance: 60 | distance: 195
+![](plots/5x5/116/10911156195890606180.svg) | ![](plots/6x6/196/13716753302625548625.svg)
+distance: 116 | distance: 195
 
 7×7 | 7×7
 :-: | :-:
-![](plots/7x7/306/6525101948841144785.svg) | ![](plots/7x7/304/11862866912315233929.svg)
-distance=306 | distance=304
+![](plots/7x7/307/6719920827228322513.svg) | ![](plots/7x7/306/6525101948841144785.svg)
+distance=307 | distance=306
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/stable)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/dev)
@@ -40,7 +40,7 @@ I'm writing more in-depth theory to the [**documentation**](https://jaantollande
 
 
 ## Open Questions
-Can we find a max complexity pattern for 4×4 grid that provably maximizes the taxicab distance?
+~~Can we find a max complexity pattern for 4×4 grid that provably maximizes the taxicab distance?~~
 
 Can we find a max complexity pattern for 5×5 grid that provably maximizes the taxicab distance?
 
