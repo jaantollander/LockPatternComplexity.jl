@@ -1,5 +1,12 @@
 # Changelog
 
+# [0.4.0](https://github.com/jaantollander/LockPatternComplexity.jl/compare/v0.3.0...v0.4.0) (2021-12-04)
+
+
+### Features
+
+* release on Zenodo, citation information ([723cd4b](https://github.com/jaantollander/LockPatternComplexity.jl/commit/723cd4b2d125c2b258a3619faf0181af234be91c))
+
 # [0.3.0](https://github.com/jaantollander/LockPatternComplexity.jl/compare/v0.2.0...v0.3.0) (2021-12-04)
 
 
