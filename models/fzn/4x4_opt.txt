@@ -6,6 +6,6 @@
 %%%mzn-stat: flatIntConstraints=327
 %%%mzn-stat: evaluatedReifiedConstraints=210
 %%%mzn-stat: method="maximize"
-%%%mzn-stat: flatTime=0.324767
+%%%mzn-stat: flatTime=0.30666
 %%%mzn-stat-end
 
