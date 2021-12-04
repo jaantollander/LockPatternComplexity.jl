@@ -1,5 +1,12 @@
 # Changelog
 
+# [0.5.0](https://github.com/jaantollander/LockPatternComplexity.jl/compare/v0.4.0...v0.5.0) (2021-12-04)
+
+
+### Features
+
+* bounds for taxicab distance ([6d8d703](https://github.com/jaantollander/LockPatternComplexity.jl/commit/6d8d70366a6f232485d848050c68ff86b15939ab))
+
 # [0.4.0](https://github.com/jaantollander/LockPatternComplexity.jl/compare/v0.3.0...v0.4.0) (2021-12-04)
 
 
