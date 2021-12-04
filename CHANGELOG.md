@@ -1,5 +1,19 @@
 # Changelog
 
+# [0.3.0](https://github.com/jaantollander/LockPatternComplexity.jl/compare/v0.2.0...v0.3.0) (2021-12-04)
+
+
+### Bug Fixes
+
+* improved plots script ([7828e04](https://github.com/jaantollander/LockPatternComplexity.jl/commit/7828e04e172f5c2bf559c73542742d4cc06172db))
+
+
+### Features
+
+* datafiles, separated models from src, added shell scripts ([cdfb2bb](https://github.com/jaantollander/LockPatternComplexity.jl/commit/cdfb2bbf550ff0d64e839797a31d718ef94ed587))
+* generalized the formulation ([62155ef](https://github.com/jaantollander/LockPatternComplexity.jl/commit/62155ef6d5787de7eeb0fa6d6612f00c0a043e77))
+* improved run.jl script ([cb2c9a5](https://github.com/jaantollander/LockPatternComplexity.jl/commit/cb2c9a5eca987fa5eed2f017c9e63553830e9923))
+
 # [0.2.0](https://github.com/jaantollander/LockPatternComplexity.jl/compare/v0.1.0...v0.2.0) (2021-12-01)
 
 
