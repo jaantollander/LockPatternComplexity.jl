@@ -6,8 +6,8 @@ distance: 22* | distance: 61*
 
 5×5 | 6×6
 :-:|:-:
-![](plots/5x5/116/10911156195890606180.svg) | ![](plots/6x6/196/13716753302625548625.svg)
-distance: 116 | distance: 195
+![](plots/5x5/117/1502200068648444540.svg) | ![](plots/6x6/196/13716753302625548625.svg)
+distance: 117 | distance: 195
 
 7×7 | 7×7
 :-: | :-:
@@ -47,26 +47,28 @@ Can we find a max complexity pattern for 5×5 grid that provably maximizes the t
 
 ~~Can we find a max complexity pattern for 7×7 grid?~~
 
-<!-- We can generalize the definition of pattern complexity as maximizing the number of line types used in the pattern as primary objective and maximizing the taxicab distance as secondary objective. In the generalized definition, every grid size would have solutions. Also, it would preserve the max complexity patterns. -->
-
-<!-- A question that arises from the generalized definition is whether all grids have a generalized complexity pattern such that each line has a unique type. -->
-
 
 ## Structure
-The [`src/nxn.mzn`](./src/nxn.mzn) file contains the MiniZinc constraint programming formulation.
+The [`models/`](./models/) directory contains the MiniZinc constraint programming formulations.
 
-The [`src/plots.jl`](./src/plots.jl) file contains the plotting code.
+The [`src/`](./src/) directory contains Julia code for generating data to models and plotting results.
 
-Use [`scripts/run.jl`](./scripts/run.jl) Julia script for running the model for the grid of given size.
+Use [`scripts/`](./scripts/) directory contains scripts for generating data files, running the model and plotting results.
 
-Use [`scripts/plot.jl`](./scripts/plot.jl) Julia script to plot results.
+The [`results`](./results/) directory contains the output from the models.
 
-The [`results`](./results/) directory contains the output from the shell scripts and the generated SVG plots for each grid size and taxicab distance in format `<grid>/<distance>/<id>.svg`.
+The [`plots`](./plots/) directory contains the generated SVG plots for each grid size and taxicab distance in format `<grid>/<distance>/<id>.svg`.
 
 
 ## Instructions
-We can begin by installing MiniZinc and adding it to our PATH environment variable. The, we can run Julia file from the `scripts` directory and write the output to `results/3x3.txt` file. For example:
+We can begin by installing MiniZinc and adding it to our PATH environment variable. The, we can run shell scripts from the `scripts` directory and write the output to `results/3x3.txt` file. For example, for the satisfiability we can run:
 
 ```bash
-julia scripts/run.jl -n 3 --minizinc `which minizinc` > results/3x3.txt
+./scripts/nxn_sat.sh 3 > results/3x3.txt
+```
+
+For optimization, we can run:
+
+```bash
+./scripts/nxn_opt.sh 3 > results/3x3.txt
 ```

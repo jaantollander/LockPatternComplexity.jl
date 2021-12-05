@@ -1,5 +1,6 @@
 #!/bin/bash
-minizinc models/nxn_sat.mzn models/instances/5x5.dzn \
+n=$1
+minizinc models/nxn_sat.mzn models/instances/${n}x${n}.dzn \
     --solver chuffed \
     --statistics \
     --all-solutions \
