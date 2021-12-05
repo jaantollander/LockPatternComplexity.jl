@@ -1,7 +1,7 @@
 name = "LockPatternComplexity"
 uuid = "543c5b92-ecbf-4ab6-ab9f-9ddc949b5521"
 authors = ["Jaan Tollander de Balsch"]
-version = "0.4.0"
+version = "0.5.0"
 
 [deps]
 ArgParse = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
