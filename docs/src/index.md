@@ -113,12 +113,3 @@ $$d=∑_{(x,y)∈Δ^{′}} (|x|+|y|).$$
 
 ## Symmetrical Patterns
 Two patterns are symmetrical a permutation from one to the other preserves distances.
-
-
-## Index
-```@index
-```
-
-```@autodocs
-Modules = [LockPatternComplexity]
-```
