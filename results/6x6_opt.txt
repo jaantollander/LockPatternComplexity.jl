@@ -59,3 +59,23 @@ pattern=[15, 13, 6, 34, 1, 22, 25, 5, 32, 11, 27, 16, 29, 9, 26, 12, 31, 18, 20,
 distance=200
 % time elapsed: 2278.69 s
 ----------
+%%%mzn-stat: objective=201
+%%%mzn-stat: objectiveBound=237
+%%%mzn-stat: boolVariables=9116
+%%%mzn-stat: failures=24309833
+%%%mzn-stat: propagations=17120465278
+%%%mzn-stat: solveTime=9406.79
+pattern=[2, 34, 6, 25, 22, 14, 28, 15, 27, 4, 35, 1, 30, 7, 29, 9, 36, 3, 32, 11, 26, 12, 19, 10, 21, 24, 13, 23, 8, 17, 33, 16, 20, 18, 31, 5]
+distance=201
+% time elapsed: 9408.34 s
+----------
+%%%mzn-stat: objective=202
+%%%mzn-stat: objectiveBound=237
+%%%mzn-stat: boolVariables=9116
+%%%mzn-stat: failures=24557350
+%%%mzn-stat: propagations=17296944377
+%%%mzn-stat: solveTime=9535.13
+pattern=[2, 34, 6, 25, 22, 14, 28, 15, 27, 4, 35, 1, 30, 7, 29, 9, 36, 3, 32, 5, 26, 12, 19, 10, 21, 24, 13, 23, 8, 17, 33, 16, 20, 18, 31, 11]
+distance=202
+% time elapsed: 9536.68 s
+----------
