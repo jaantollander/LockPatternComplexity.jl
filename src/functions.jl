@@ -1,9 +1,12 @@
+"""Generate `x` and `y` coordinates for `n×n` grid."""
 function grid(n::Int)
     x = [i for i = 1:n for _ = 1:n]
     y = [j for _ = 1:n for j = 1:n]
     return x, y
 end
 
+"""Generate all `x` and `y` differences and their multiple `k` 
+that represent each line type in `n×n` grid."""
 function line_types(n::Int)
     xs = Int[0, 1, 1, 1]
     ys = Int[1, 0, 1, -1]
@@ -34,6 +37,7 @@ function line_types(n::Int)
     return xs, ys, ks
 end
 
+"""Generate all symmetrical permutations of lock pattern in `n×n` grid."""
 function symmetries(n::Int)
     # Horizontal reflection
     reflect = [j + i * n for i = 0:n-1 for j = n:-1:1]
@@ -59,6 +63,7 @@ function bounds(n::Int)
     return d_lb, d_ub
 end
 
+"""Generate the input data for `n×n` MiniZinc model."""
 function data(n::Int)
     m = n^2
     M = m - 1

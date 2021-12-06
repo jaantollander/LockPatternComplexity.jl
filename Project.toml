@@ -4,7 +4,6 @@ authors = ["Jaan Tollander de Balsch"]
 version = "0.5.0"
 
 [deps]
-ArgParse = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
 Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 
 [compat]
