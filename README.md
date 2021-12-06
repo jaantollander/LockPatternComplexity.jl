@@ -6,8 +6,8 @@ distance: 22* | distance: 61*
 
 5×5 | 6×6
 :-:|:-:
-![](plots/5x5/117/1502200068648444540.svg) | ![](plots/6x6/198/1384112307011283409.svg)
-distance: 117 | distance: 198
+![](plots/5x5/117/1502200068648444540.svg) | ![](plots/6x6/200/5150772376127135649.svg)
+distance: 117 | distance: 200
 
 7×7 | 7×7
 :-: | :-:
@@ -19,7 +19,7 @@ distance=307 | distance=306
 [![Build Status](https://github.com/jaantollander/LockPatternComplexity.jl/workflows/CI/badge.svg)](https://github.com/jaantollander/LockPatternComplexity.jl/actions)
 [![DOI](https://zenodo.org/badge/433790288.svg)](https://zenodo.org/badge/latestdoi/433790288)
 
-Solving the most complex lock patterns using Constraint Programming with [MiniZinc](https://www.minizinc.org/).
+Solutions for the most complex lock patterns using Constraint Programming with [MiniZinc](https://www.minizinc.org/). As solvers, we use Chuffed for satisfiability and [Google OR-Tools](https://developers.google.com/optimization/) for optimization.
 
 Lock patterns plots are generated using [Julia Language](https://julialang.org/) with Plots.jl package.
 
@@ -61,7 +61,9 @@ The [`plots`](./plots/) directory contains the generated SVG plots for each grid
 
 
 ## Instructions
-We can begin by installing MiniZinc and adding it to our PATH environment variable. The, we can run shell scripts from the `scripts` directory and write the output to `results/3x3.txt` file. For example, for the satisfiability we can run:
+We can begin by installing MiniZinc and adding it to the PATH environment variable. You can use shell scripts for [installing MiniZinc and Google OR-Tools on Linux](https://github.com/jaantollander/install-minizinc-ortools). Chuffed solver is bundled with MiniZinc.
+
+Then, we can run shell scripts from the `scripts` directory and write the output to `results/3x3.txt` file. For example, for the satisfiability we can run:
 
 ```bash
 ./scripts/nxn_sat.sh 3 > results/3x3.txt
