@@ -55,9 +55,9 @@ The [`src/`](./src/) directory contains Julia code for generating data to models
 
 Use [`scripts/`](./scripts/) directory contains scripts for generating data files, running the model and plotting results.
 
-The [`results`](./results/) directory contains the output from the models.
+The [`results/`](./results/) directory contains the output from the models.
 
-The [`plots`](./plots/) directory contains the generated SVG plots for each grid size and taxicab distance in format `<grid>/<distance>/<id>.svg`.
+The [`plots/`](./plots/) directory contains the generated SVG plots for each grid size and taxicab distance in format `<grid>/<distance>/<id>.svg`.
 
 
 ## Installing MiniZinc and Google OR-Tools
