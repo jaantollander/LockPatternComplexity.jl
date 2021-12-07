@@ -129,3 +129,9 @@ pattern=[15, 28, 9, 34, 6, 25, 22, 14, 35, 4, 33, 1, 30, 7, 29, 2, 36, 3, 27, 10
 distance=207
 % time elapsed: 16142.35 s
 ----------
+%%%mzn-stat: objective=207
+%%%mzn-stat: objectiveBound=237
+%%%mzn-stat: boolVariables=9116
+%%%mzn-stat: failures=4046770
+%%%mzn-stat: propagations=4644003315
+%%%mzn-stat: solveTime=92724

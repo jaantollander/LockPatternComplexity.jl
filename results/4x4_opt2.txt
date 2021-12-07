@@ -1,0 +1,96 @@
+%%%mzn-stat: objective=50
+%%%mzn-stat: objectiveBound=63
+%%%mzn-stat: boolVariables=1690
+%%%mzn-stat: failures=1559
+%%%mzn-stat: propagations=580814
+%%%mzn-stat: solveTime=0.186613
+pattern=[5, 16, 2, 15, 4, 14, 10, 3, 12, 11, 13, 8, 9, 6, 1, 7]
+distance=50
+% time elapsed: 0.88 s
+----------
+%%%mzn-stat: objective=52
+%%%mzn-stat: objectiveBound=63
+%%%mzn-stat: boolVariables=1690
+%%%mzn-stat: failures=776
+%%%mzn-stat: propagations=420297
+%%%mzn-stat: solveTime=0.19477
+pattern=[4, 11, 1, 7, 10, 2, 15, 6, 5, 16, 9, 8, 13, 3, 14, 12]
+distance=52
+% time elapsed: 0.88 s
+----------
+%%%mzn-stat: objective=53
+%%%mzn-stat: objectiveBound=63
+%%%mzn-stat: boolVariables=1690
+%%%mzn-stat: failures=2038
+%%%mzn-stat: propagations=710477
+%%%mzn-stat: solveTime=0.23387
+pattern=[7, 16, 2, 15, 4, 14, 10, 12, 1, 6, 13, 8, 9, 3, 5, 11]
+distance=53
+% time elapsed: 0.92 s
+----------
+%%%mzn-stat: objective=54
+%%%mzn-stat: objectiveBound=63
+%%%mzn-stat: boolVariables=1690
+%%%mzn-stat: failures=2858
+%%%mzn-stat: propagations=901102
+%%%mzn-stat: solveTime=0.305148
+pattern=[5, 16, 2, 15, 4, 14, 12, 3, 9, 8, 13, 6, 10, 11, 1, 7]
+distance=54
+% time elapsed: 0.99 s
+----------
+%%%mzn-stat: objective=55
+%%%mzn-stat: objectiveBound=63
+%%%mzn-stat: boolVariables=1690
+%%%mzn-stat: failures=3980
+%%%mzn-stat: propagations=1162016
+%%%mzn-stat: solveTime=0.397274
+pattern=[6, 16, 2, 15, 4, 5, 11, 3, 13, 8, 14, 7, 9, 10, 1, 12]
+distance=55
+% time elapsed: 1.09 s
+----------
+%%%mzn-stat: objective=57
+%%%mzn-stat: objectiveBound=63
+%%%mzn-stat: boolVariables=1690
+%%%mzn-stat: failures=4005
+%%%mzn-stat: propagations=1169628
+%%%mzn-stat: solveTime=0.400429
+pattern=[6, 16, 2, 15, 4, 5, 11, 3, 13, 8, 14, 7, 9, 12, 1, 10]
+distance=57
+% time elapsed: 1.09 s
+----------
+%%%mzn-stat: objective=58
+%%%mzn-stat: objectiveBound=63
+%%%mzn-stat: boolVariables=1690
+%%%mzn-stat: failures=74627
+%%%mzn-stat: propagations=20558039
+%%%mzn-stat: solveTime=8.81175
+pattern=[7, 9, 3, 14, 4, 11, 2, 15, 1, 16, 5, 12, 13, 8, 6, 10]
+distance=58
+% time elapsed: 9.50 s
+----------
+%%%mzn-stat: objective=59
+%%%mzn-stat: objectiveBound=63
+%%%mzn-stat: boolVariables=1690
+%%%mzn-stat: failures=1533781
+%%%mzn-stat: propagations=489363290
+%%%mzn-stat: solveTime=204.074
+pattern=[10, 4, 5, 16, 2, 15, 6, 12, 9, 7, 14, 3, 13, 8, 1, 11]
+distance=59
+% time elapsed: 204.77 s
+----------
+%%%mzn-stat: objective=61
+%%%mzn-stat: objectiveBound=63
+%%%mzn-stat: boolVariables=1690
+%%%mzn-stat: failures=1582003
+%%%mzn-stat: propagations=504628421
+%%%mzn-stat: solveTime=211.864
+pattern=[6, 12, 5, 16, 1, 15, 2, 11, 10, 3, 14, 4, 13, 8, 9, 7]
+distance=61
+% time elapsed: 212.56 s
+----------
+%%%mzn-stat: objective=61
+%%%mzn-stat: objectiveBound=63
+%%%mzn-stat: boolVariables=1690
+%%%mzn-stat: failures=30586
+%%%mzn-stat: propagations=12360419
+%%%mzn-stat: solveTime=1244.53
