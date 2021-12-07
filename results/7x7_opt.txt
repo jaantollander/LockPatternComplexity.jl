@@ -1,0 +1,30 @@
+%%%mzn-stat: objective=306
+%%%mzn-stat: objectiveBound=384
+%%%mzn-stat: boolVariables=16640
+%%%mzn-stat: failures=846712
+%%%mzn-stat: propagations=1002854199
+%%%mzn-stat: solveTime=404.115
+pattern=[1, 48, 18, 23, 3, 46, 12, 37, 38, 19, 25, 39, 6, 47, 10, 28, 15, 34, 7, 44, 27, 29, 13, 45, 9, 26, 30, 21, 22, 32, 16, 42, 4, 35, 24, 49, 8, 41, 2, 14, 43, 20, 31, 5, 36, 33, 11, 40, 17]
+distance=306
+% time elapsed: 444.40 s
+----------
+%%%mzn-stat: objective=310
+%%%mzn-stat: objectiveBound=384
+%%%mzn-stat: boolVariables=16640
+%%%mzn-stat: failures=873261
+%%%mzn-stat: propagations=1031568331
+%%%mzn-stat: solveTime=428.462
+pattern=[1, 48, 31, 26, 3, 46, 12, 37, 17, 39, 20, 29, 6, 47, 10, 28, 15, 34, 7, 44, 18, 30, 13, 45, 9, 33, 23, 21, 22, 19, 16, 42, 4, 35, 24, 49, 8, 41, 2, 14, 43, 27, 38, 5, 36, 32, 11, 40, 25]
+distance=310
+% time elapsed: 468.73 s
+----------
+%%%mzn-stat: objective=313
+%%%mzn-stat: objectiveBound=384
+%%%mzn-stat: boolVariables=16640
+%%%mzn-stat: failures=1646951
+%%%mzn-stat: propagations=1703189463
+%%%mzn-stat: solveTime=1130.2
+pattern=[2, 48, 1, 40, 3, 46, 12, 37, 33, 11, 20, 29, 6, 47, 17, 28, 15, 34, 7, 44, 25, 30, 13, 45, 9, 26, 24, 21, 22, 32, 18, 42, 4, 35, 23, 49, 8, 41, 16, 14, 43, 27, 38, 5, 36, 10, 39, 19, 31]
+distance=313
+% time elapsed: 1170.46 s
+----------

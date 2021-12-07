@@ -11,8 +11,8 @@ distance: 119 | distance: 207
 
 7×7 | 7×7
 :-: | :-:
-![](plots/7x7/307/6719920827228322513.svg) | ![](plots/7x7/306/6525101948841144785.svg)
-distance=307 | distance=306
+![](plots/7x7/307/6719920827228322513.svg) | ![](plots/7x7/313/135119915199949193.svg)
+distance=307 | distance=313
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/stable)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://jaantollander.github.io/LockPatternComplexity.jl/dev)
