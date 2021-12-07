@@ -61,16 +61,12 @@ The [`plots`](./plots/) directory contains the generated SVG plots for each grid
 
 
 ## Instructions
+## Installing Mizinc and OR-Tools
 We can begin by installing MiniZinc and adding it to the PATH environment variable. You can use shell scripts for [installing MiniZinc and Google OR-Tools on Linux](https://github.com/jaantollander/install-minizinc-ortools). Chuffed solver is bundled with MiniZinc.
 
-Then, we can run shell scripts from the `scripts` directory and write the output to `results/3x3.txt` file. For example, for the satisfiability we can run:
+## Solving Locally
+Then, we can run shell scripts from the `scripts` directory and write the output to `results/3x3.txt` file. For example, to run the optimization model, we can use the following command.
 
 ```bash
-./scripts/nxn_sat.sh 3 > results/3x3.txt
-```
-
-For optimization, we can run:
-
-```bash
-./scripts/nxn_opt.sh 3 > results/3x3.txt
+./scripts/nxn_opt.sh 3 results/3x3.txt
 ```
