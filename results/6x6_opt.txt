@@ -79,3 +79,53 @@ pattern=[2, 34, 6, 25, 22, 14, 28, 15, 27, 4, 35, 1, 30, 7, 29, 9, 36, 3, 32, 5,
 distance=202
 % time elapsed: 9536.68 s
 ----------
+%%%mzn-stat: objective=203
+%%%mzn-stat: objectiveBound=237
+%%%mzn-stat: boolVariables=9116
+%%%mzn-stat: failures=31792574
+%%%mzn-stat: propagations=21925391842
+%%%mzn-stat: solveTime=12124
+pattern=[2, 34, 6, 25, 22, 14, 28, 15, 27, 4, 35, 1, 30, 7, 29, 9, 36, 3, 32, 5, 21, 16, 33, 11, 20, 24, 13, 23, 8, 17, 19, 12, 26, 18, 31, 10]
+distance=203
+% time elapsed: 12125.56 s
+----------
+%%%mzn-stat: objective=204
+%%%mzn-stat: objectiveBound=237
+%%%mzn-stat: boolVariables=9116
+%%%mzn-stat: failures=32063507
+%%%mzn-stat: propagations=22095704679
+%%%mzn-stat: solveTime=12247.3
+pattern=[3, 34, 6, 25, 22, 14, 21, 16, 28, 2, 35, 1, 30, 7, 29, 9, 36, 4, 33, 10, 27, 5, 32, 11, 20, 24, 13, 23, 8, 17, 19, 12, 26, 18, 31, 15]
+distance=204
+% time elapsed: 12248.84 s
+----------
+%%%mzn-stat: objective=205
+%%%mzn-stat: objectiveBound=237
+%%%mzn-stat: boolVariables=9116
+%%%mzn-stat: failures=32063785
+%%%mzn-stat: propagations=22095890721
+%%%mzn-stat: solveTime=12247.4
+pattern=[3, 34, 6, 25, 22, 14, 28, 15, 27, 2, 35, 1, 30, 7, 29, 9, 36, 4, 33, 10, 21, 5, 32, 11, 20, 24, 13, 23, 8, 17, 19, 12, 26, 18, 31, 16]
+distance=205
+% time elapsed: 12248.97 s
+----------
+%%%mzn-stat: objective=206
+%%%mzn-stat: objectiveBound=237
+%%%mzn-stat: boolVariables=9116
+%%%mzn-stat: failures=33841592
+%%%mzn-stat: propagations=23345116432
+%%%mzn-stat: solveTime=13208.5
+pattern=[9, 34, 6, 25, 22, 14, 28, 15, 35, 4, 33, 1, 30, 7, 29, 2, 36, 3, 27, 10, 21, 5, 32, 11, 20, 24, 13, 23, 8, 17, 19, 12, 26, 18, 31, 16]
+distance=206
+% time elapsed: 13210.03 s
+----------
+%%%mzn-stat: objective=207
+%%%mzn-stat: objectiveBound=237
+%%%mzn-stat: boolVariables=9116
+%%%mzn-stat: failures=38982385
+%%%mzn-stat: propagations=26882403440
+%%%mzn-stat: solveTime=16140.8
+pattern=[15, 28, 9, 34, 6, 25, 22, 14, 35, 4, 33, 1, 30, 7, 29, 2, 36, 3, 27, 10, 21, 5, 32, 11, 20, 24, 13, 23, 8, 17, 19, 12, 26, 18, 31, 16]
+distance=207
+% time elapsed: 16142.35 s
+----------
