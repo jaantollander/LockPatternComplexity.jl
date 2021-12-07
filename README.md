@@ -60,7 +60,7 @@ The [`results`](./results/) directory contains the output from the models.
 The [`plots`](./plots/) directory contains the generated SVG plots for each grid size and taxicab distance in format `<grid>/<distance>/<id>.svg`.
 
 
-## Installing Mizinc and OR-Tools
+## Installing MiniZinc and Google OR-Tools
 We can begin by installing MiniZinc and adding it to the PATH environment variable. You can use shell scripts for [installing MiniZinc and Google OR-Tools on Linux](https://github.com/jaantollander/install-minizinc-ortools). Chuffed solver is bundled with MiniZinc.
 
 
