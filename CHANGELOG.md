@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/jaantollander/LockPatternComplexity.jl/compare/v0.6.0...v0.6.1) (2021-12-09)
+
+
+### Bug Fixes
+
+* removed citation version replace ([c3e0373](https://github.com/jaantollander/LockPatternComplexity.jl/commit/c3e03731fca358dd9a9d958951d5a809b2e9a00c))
+
 # [0.6.0](https://github.com/jaantollander/LockPatternComplexity.jl/compare/v0.5.0...v0.6.0) (2021-12-09)
 
 
