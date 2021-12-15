@@ -1,5 +1,12 @@
 # Changelog
 
+# [0.7.0](https://github.com/jaantollander/LockPatternComplexity.jl/compare/v0.6.1...v0.7.0) (2021-12-15)
+
+
+### Features
+
+* removed satisfiability models ([426b758](https://github.com/jaantollander/LockPatternComplexity.jl/commit/426b758f4348bb8fae83dc617db083f0b75e38c0))
+
 ## [0.6.1](https://github.com/jaantollander/LockPatternComplexity.jl/compare/v0.6.0...v0.6.1) (2021-12-09)
 
 
