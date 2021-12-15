@@ -10,7 +10,7 @@ function plot_nxn(n::Int, p::Vector{Int})
     color_map = Dict(d => RGB(g[z]) for (d, z) in zip(qs, LinRange(0, 1, length(qs))))
 
     # Create the plot
-    plt = plot(; xticks = :none, yticks = :none, legend = false, axis = false, size = (400, 400))
+    plt = plot(; xticks = :none, yticks = :none, legend = false, axis = false, size = (400, 400), background=:lightgray)
 
     # Plot the lines
     for i = 1:length(p)-1
