@@ -79,11 +79,16 @@ function data(n::Int)
         "d_lb=$d_lb;", "d_ub=$d_ub;"]
 end
 
+function create_instance(n::Int, directory::AbstractString)
+    d = join(data(n), "\n")
+    write(joinpath(directory, "$(n)x$(n).dzn"), d)
+end
+
 function line_type(x1::Int, x2::Int, y1::Int, y2::Int)
     x = x2 - x1
     y = y2 - y1
     d = gcd(x, y)
-    if x < 0
+    if (x < 0) || (iszero(x) && y < 0)
         return (div(-x, d), div(-y, d))
     else
         return (div(x, d), div(y, d))
