@@ -32,7 +32,9 @@ This repository is structured as follows:
 
 * The [`src/`](./src/) directory contains Julia code.
 * The [`models/`](./models/) directory contains the MiniZinc models.
-* The [`scripts/`](./scripts/) directory contains scripts for generating data files, running the model, and plotting the results.
+* The [`models/instances/`](./models/instances/) contains the datafiles for different grid sized instances of the model.
+* The [`models/fzn/`](./models/fzn/) contains FlatZinc files generated from each model instances. These are useful to understand the size of a model instance and verify that variables have sensible bounds.
+* The [`scripts/`](./scripts/) directory contains scripts for generating data files for instances, running the model, and plotting the results.
 * The [`results/`](./results/) directory contains the text output from the models.
 * The [`plots/`](./plots/) directory contains the generated SVG plots for each grid size and taxicab distance in format `<grid>/<distance>/<id>.svg`. The `<id>` is a unique identified generated using hash of the pattern.
 
