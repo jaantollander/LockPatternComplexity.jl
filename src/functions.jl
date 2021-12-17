@@ -1,87 +1,64 @@
-"""Generate `x` and `y` coordinates for `n×n` grid."""
-function grid(n::Int)
-    x = [i for i = 1:n for _ = 1:n]
-    y = [j for _ = 1:n for j = 1:n]
-    return x, y
+## --- Grid ---
+
+# TODO: generalize for arbitrary grids
+
+"""Two-dimensional grid."""
+struct Grid
+    x::Vector{Int}
+    y::Vector{Int}
+    n::Tuple{Int,Int}
 end
 
+Base.length(grid::Grid) = prod(grid.n)
+
+function Grid(n::Int)
+    x = [i for i = 1:n for _ = 1:n]
+    y = [j for _ = 1:n for j = 1:n]
+    Grid(x, y, (n, n))
+end
+
+
+## --- Line Types ---
+
+struct LineTypes
+    x::Vector{Int}
+    y::Vector{Int}
+    k::Vector{Int}
+end
+
+Base.length(t::LineTypes) = length(t.k)
+
 """Generate all `x` and `y` differences and their multiple `k` 
-that represent each line type in `n×n` grid."""
-function line_types(n::Int)
+that represent each line type in a grid."""
+function LineTypes(grid::Grid)
+    (n, _) = grid.n
     xs = Int[0, 1, 1, 1]
     ys = Int[1, 0, 1, -1]
     ks = Int[n-1, n-1, n-1, n-1]
-    for x1 = 1:n-2
-        for y1 = (x1+1):n-1
-            if gcd(x1, y1) == 1
-                k = div(n - 1, y1)
+    for x = 1:n-2
+        for y = (x+1):n-1
+            if gcd(x, y) == 1
+                k = div(n - 1, y)
                 # 1
-                push!(xs, x1)
-                push!(ys, y1)
+                push!(xs, x)
+                push!(ys, y)
                 push!(ks, k)
                 # 2
-                push!(xs, y1)
-                push!(ys, x1)
+                push!(xs, y)
+                push!(ys, x)
                 push!(ks, k)
                 # 3
-                push!(xs, x1)
-                push!(ys, -y1)
+                push!(xs, x)
+                push!(ys, -y)
                 push!(ks, k)
                 # 4
-                push!(xs, y1)
-                push!(ys, -x1)
+                push!(xs, y)
+                push!(ys, -x)
                 push!(ks, k)
             end
         end
     end
-    return xs, ys, ks
-end
-
-"""Generate all symmetrical permutations of lock pattern in `n×n` grid."""
-function symmetries(n::Int)
-    # Horizontal reflection
-    reflect = [j + i * n for i = 0:n-1 for j = n:-1:1]
-    # Rotate 90 degrees
-    r90 = [j + i * n for j = 1:n for i = n-1:-1:0]
-    r180 = r90[r90]
-    r270 = r180[r90]
-    r180_reflect = r180[reflect]
-    r270_reflect = r270[reflect]
-    return r90, r180, r270, reflect, r180_reflect, r270_reflect
-end
-
-"""Upper and lower bound for taxicab distance."""
-function bounds(n::Int)
-    M = n^2 - 1
-    ys, xs, ks = line_types(n)
-    # Taxicab distance of each line type
-    x = abs.(ys) + abs.(xs)
-    # Taxicab distance of shortest unique line types
-    d_lb = sum(sort(x)[1:M])
-    # Taxicab distance of longest unique line types
-    d_ub = sum(reverse(sort(x .* ks))[1:M])
-    return d_lb, d_ub
-end
-
-"""Generate the input data for `n×n` MiniZinc model."""
-function data(n::Int)
-    m = n^2
-    M = m - 1
-    x, y = grid(n)
-    xs, ys, ks = line_types(n)
-    N = length(ks)
-    r90, r180, r270, reflect, r180_reflect, r270_reflect = symmetries(n)
-    d_lb, d_ub = bounds(n)
-    return ["n=$n;", "m=$m;", "x=$x;", "y=$y;", "M=$M;", "N=$N;",
-        "xs=$(xs);", "ys=$(ys);", "ks=$(ks);",
-        "r90=$r90;", "r180=$r180;", "r270=$r270;", "reflect=$reflect;",
-        "r180_reflect=$r180_reflect;", "r270_reflect=$r270_reflect;", 
-        "d_lb=$d_lb;", "d_ub=$d_ub;"]
-end
-
-function create_instance(n::Int, directory::AbstractString)
-    d = join(data(n), "\n")
-    write(joinpath(directory, "$(n)x$(n).dzn"), d)
+    return LineTypes(xs, ys, ks)
 end
 
 function line_type(x1::Int, x2::Int, y1::Int, y2::Int)
@@ -94,6 +71,75 @@ function line_type(x1::Int, x2::Int, y1::Int, y2::Int)
         return (div(x, d), div(y, d))
     end
 end
+
+
+## --- Symmetries ---
+
+struct Symmetries
+    p::Vector{Vector{Int}}
+end
+
+"""Generate all symmetrical permutations of lock pattern in a grid."""
+function Symmetries(grid::Grid)
+    (n, _) = grid.n
+    # Horizontal reflection
+    reflect = [j + i * n for i = 0:n-1 for j = n:-1:1]
+    # Rotate 90 degrees
+    r90 = [j + i * n for j = 1:n for i = n-1:-1:0]
+    r180 = r90[r90]
+    r270 = r180[r90]
+    r180_reflect = r180[reflect]
+    r270_reflect = r270[reflect]
+    Symmetries([r90, r180, r270, reflect, r180_reflect, r270_reflect])
+end
+
+
+## --- Bounds ---
+
+"""Upper and lower bound for taxicab distance."""
+struct Bounds
+    lb::Int
+    ub::Int
+end
+
+function Bounds(grid::Grid)
+    M = length(grid) - 1
+    t = LineTypes(grid)
+    # Taxicab distance of each line type
+    x = abs.(t.y) + abs.(t.x)
+    # Taxicab distance of shortest unique line types
+    lb = sum(sort(x)[1:M])
+    # Taxicab distance of longest unique line types
+    ub = sum(reverse(sort(x .* t.k))[1:M])
+    return Bounds(lb, ub)
+end
+
+
+# --- Generate model data ---
+
+"""Generate the input data for the MiniZinc model."""
+function data(grid::Grid)
+    t = LineTypes(grid)
+    s = Symmetries(grid)
+    r90, r180, r270, reflect, r180_reflect, r270_reflect = s.p
+    b = Bounds(grid)
+    return [
+        "m=$(length(grid));", "gx=$(grid.x);", "gy=$(grid.y);",
+        "N=$(length(t));", "tx=$(t.x);", "ty=$(t.y);", "tk=$(t.k);",
+        "r90=$r90;", "r180=$r180;", "r270=$r270;", "reflect=$reflect;",
+        "r180_reflect=$r180_reflect;", "r270_reflect=$r270_reflect;",
+        "d_lb=$(b.lb);", "d_ub=$(b.ub);"
+    ]
+end
+
+function create_instance(n::Int, directory::AbstractString)
+    grid = Grid(n)
+    d = join(data(grid), "\n")
+    write(joinpath(directory, "$(join(grid.n, "x")).dzn"), d)
+end
+
+
+## --- Extract solutions from output files ---
 
 function parse_int_array(x::AbstractString; I = Int)
     [parse(I, t.match) for t in eachmatch(r"([0-9]+)", x)]
