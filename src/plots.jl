@@ -1,13 +1,8 @@
 using Plots
 
-function canvas(; size=(400, 400), backgroud=:lightgray)
-    plot(;
-        xticks = :none,
-        yticks = :none,
-        legend = false,
-        axis = false,
-        size = size,
-        background = backgroud)
+"""Plot """
+function canvas(; kwargs...)
+    plot(; xticks = :none, yticks = :none, legend = false, axis = false, kwargs...)
 end
 
 """Create unique color for all line types in the grid."""
@@ -53,7 +48,7 @@ function create_plots(n::Int, path::AbstractString, directory::AbstractString; l
         if distance ≥ limit
             root = mkpath(joinpath(directory, "$(join(grid.n, "x"))", "$(distance)"))
             for pattern in patterns
-                plt = canvas()
+                plt = canvas(; size=(400, 400), backgroud=:lightgray)
                 plot_lock_pattern!(plt, grid, pattern)
                 savefig(plt, joinpath(root, "$(hash(pattern)).svg"))
             end

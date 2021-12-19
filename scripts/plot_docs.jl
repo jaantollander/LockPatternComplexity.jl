@@ -27,7 +27,10 @@ function plot_line_types(grid)
             end
         end
     end
-    plt = (canvas(; size = (200, 200)), canvas(; size = (200, 200)))
+    plt = (
+        canvas(; size = (200, 200), backgroud = :lightgray),
+        canvas(; size = (200, 200), backgroud = :lightgray)
+    )
     plot_lines!(plt[1], lines[1], colors[1]; linewidth = 3)
     plot_lines!(plt[2], lines[2], colors[2]; linewidth = 3)
     plot_lines!(plt[1], lines2[1], colors2[1]; linewidth = 3, linestyle = :dash)
@@ -41,9 +44,9 @@ grid = Grid(5)
 pattern = (shuffle(1:length(grid)), shuffle(1:length(grid)))
 
 begin
-    plt = canvas(; size = (200, 200))
+    plt = canvas(; size = (200, 200), backgroud = :lightgray)
     plot_grid!(plt, grid; marker = :circle, color = :black, markersize = 5)
-    savefig(plot_grid(grid), "docs/src/plots/grid.svg")
+    savefig(plt, "docs/src/plots/grid.svg")
 end
 
 begin
@@ -53,7 +56,9 @@ begin
 end
 
 for i = 1:2
-    plt = canvas(size = (200, 200))
+    plt = canvas(size = (200, 200), backgroud = :lightgray)
     plot_lock_pattern!(plt, grid, pattern[i])
     savefig(plt, "docs/src/plots/lock_pattern_$i.svg")
 end
+
+# TODO: symmetries

@@ -11,6 +11,5 @@ using Test
     tmp = mktempdir()
     create_instance(3, tmp)
     extract_solutions(joinpath(@__DIR__, "output"))
-
     @test true
 end

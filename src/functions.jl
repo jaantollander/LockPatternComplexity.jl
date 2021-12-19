@@ -1,6 +1,6 @@
 ## --- Grid ---
 
-# TODO: generalize for arbitrary grids
+# TODO: generalize for arbitrary rectangular grids
 
 """Two-dimensional grid."""
 struct Grid
@@ -11,11 +11,13 @@ end
 
 Base.length(grid::Grid) = prod(grid.n)
 
-function Grid(n::Int)
-    x = [i for i = 1:n for _ = 1:n]
-    y = [j for _ = 1:n for j = 1:n]
-    Grid(x, y, (n, n))
+function Grid(n::Tuple{Int,Int})
+    x = [i for i = 1:n[1] for _ = 1:n[2]]
+    y = [j for _ = 1:n[1] for j = 1:n[2]]
+    Grid(x, y, n)
 end
+
+Grid(n::Int) = Grid((n, n))
 
 
 ## --- Line Types ---
@@ -31,29 +33,23 @@ Base.length(t::LineTypes) = length(t.k)
 """Generate all `x` and `y` differences and their multiple `k` 
 that represent each line type in a grid."""
 function LineTypes(grid::Grid)
-    (n, _) = grid.n
-    xs = Int[0, 1, 1, 1]
-    ys = Int[1, 0, 1, -1]
-    ks = Int[n-1, n-1, n-1, n-1]
-    for x = 1:n-2
-        for y = (x+1):n-1
-            if gcd(x, y) == 1
-                k = div(n - 1, y)
-                # 1
-                push!(xs, x)
-                push!(ys, y)
+    n = grid.n
+    dx_max = n[1] -1
+    dy_max = n[2] -1
+    xs = Int[0, 1]
+    ys = Int[1, 0]
+    ks = Int[dx_max, dy_max]
+    for dx = 1:dx_max
+        for dy = 1:dy_max
+            if gcd(dx, dy) == 1
+                k = min(div(dx_max, dx), div(dy_max, dy))
+                # Increasing y
+                push!(xs, dx)
+                push!(ys, dy)
                 push!(ks, k)
-                # 2
-                push!(xs, y)
-                push!(ys, x)
-                push!(ks, k)
-                # 3
-                push!(xs, x)
-                push!(ys, -y)
-                push!(ks, k)
-                # 4
-                push!(xs, y)
-                push!(ys, -x)
+                # Decreasing y
+                push!(xs, dx)
+                push!(ys, -dy)
                 push!(ks, k)
             end
         end
