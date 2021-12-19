@@ -1,5 +1,12 @@
 # Changelog
 
+# [0.8.0](https://github.com/jaantollander/LockPatternComplexity.jl/compare/v0.7.0...v0.8.0) (2021-12-19)
+
+
+### Features
+
+* generalized grid and line types ([6a25e11](https://github.com/jaantollander/LockPatternComplexity.jl/commit/6a25e11c0dcbc3c70f6ac4888b3c83ac4b3d39af))
+
 # [0.7.0](https://github.com/jaantollander/LockPatternComplexity.jl/compare/v0.6.1...v0.7.0) (2021-12-15)
 
 
